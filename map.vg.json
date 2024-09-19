@@ -5,36 +5,32 @@
     "height": 400,
     "projection": {"type": "equalEarth"},
     "data": {
-    "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite
-    /main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
-    "format": {"type": "topojson", "feature": "ne_110m_admin_0_
-    countries"}
+    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/main/js/output.json?token=GHSAT0AAAAAACXWWDA52UIYN42TZVWY7PAOZXLSKSA",
+    "format": {"type": "topojson", "feature": "Graticulre"}
     },
     "transform": [
     {
-    "lookup": "properties.NAME",
+    "lookup": "properties.STE_NAME21",
     "from": {
     "data": {
-    "url": "https://raw.githubusercontent.com/FIT3179/Veg
-    a-Lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/main/Data%20A2/long_format_employment_data.csv?token=GHSAT0AAAAAACXWWDA4DQKYINBWYFSC4ANGZXLSOIA"
     },
-    "key": "Country",
-    "fields": ["Active"]
+    "key": "State",
+    "fields": ["Employed_Persons"]
     }
-},
-{"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+}
 ],
 "mark": {"type": "geoshape"},
 "encoding": {
 "color": {
-"field": "Active Cases",
+"field": "Employed_Persons",
 "type": "quantitative",
-"scale": {"type": "log"}
+"scale": {"type": "linear"}
 },
 "tooltip": [
-{"field": "properties.NAME", "type": "nominal", "title":
-"Country"},
-{"field": "Active", "type": "quantitative"}
+{"field": "properties.STE_NAME21", "type": "nominal", "title":
+"State"},
+{"field": "Employed_Persons", "type": "quantitative"}
 ]
 }
 }
