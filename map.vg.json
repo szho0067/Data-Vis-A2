@@ -3,7 +3,7 @@
     "title": "Number of Employed People in Australia",
     "projection": {"type": "equalEarth"},
     "data": {
-    "url": "tent.com/szho0067/Data-Vis-A2/https://raw.githubuserconmain/js/output_v2.json",
+    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/main/js/output_v2.json",
     "format": {"type": "topojson", "feature": "STE_2021_AUST_GDA2020"}
     },
     "transform": [

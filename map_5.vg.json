@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/aggregated_employment_data.csv"
+    },
+    "transform": [
+      {
+        "lookup": "State",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/main/js/output_v2.json",
+            "format": {"type": "topojson", "feature": "STE_2021_AUST_GDA2020"}
+          },
+          "key": "properties.STE_NAME21",
+          "fields": ["properties", "type", "geometry"]
+        }
+      },
+      {"filter": "datum.Date==Year_Filter"}
+    ],
+    "params": [
+      {
+        "name": "Year_Filter",
+        "value": 1978,
+        "bind": {
+          "input": "range",
+          "min": 1978,
+          "max": 1987,
+          "step": 1,
+          "name": "Select the year:"
+        }
+      }
+    ],
+    "projection": {"type": "naturalEarth1"},
+    "mark": "geoshape",
+    "encoding": {
+      "color": {"field": "Total_Employed", "type": "quantitative"},
+      "tooltip": [
+        {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
+        {"field": "Total_Employed", "type": "quantitative"}
+      ]
+    }
+  }
+  
