@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Number of Employed People in Australia",
+    "projection": {"type": "equalEarth"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/main/js/output_v2.json",
+      "format": {"type": "topojson", "feature": "STE_2021_AUST_GDA2020"}
+    },
+    "transform": [
+      {
+        "lookup": "properties.STE_NAME21",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/aggregated_employment_data.csv"
+          },
+          "key": "State",
+          "fields": ["Date", "Total_Employed"]
+        },
+        "as": "employment_data"
+      },
+      {
+        "filter": {
+          "field": "employment_data.Date",
+          "equal": {"param": "year_slider"}
+        }
+      }
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+      "color": {
+        "field": "employment_data.Total_Employed",
+        "type": "quantitative",
+        "scale": {"type": "linear", "scheme": "greenblue"}
+      },
+      "tooltip": [
+        {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
+        {"field": "employment_data.Total_Employed", "type": "quantitative", "title": "Total Employed"}
+      ]
+    },
+    "params": [
+      {
+        "name": "year_slider",
+        "value": 1978,
+        "bind": {
+          "input": "range",
+          "min": 1978,
+          "max": 1987,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ]
+  }
+  
