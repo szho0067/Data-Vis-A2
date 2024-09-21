@@ -1,81 +1,81 @@
-"Date","State","Total_Employed"
-1978,"Australian.Capital.Territory",1055.7
-1978,"New.South.Wales",23282.7
-1978,"Northern.Territory",504.2
-1978,"Queensland",9677.3
-1978,"South.Australia",6142.5
-1978,"Tasmania",1831.5
-1978,"Victoria",18130.1
-1978,"Western.Australia",5796.7
-1979,"Australian.Capital.Territory",1134.3
-1979,"New.South.Wales",25689.5
-1979,"Northern.Territory",578.9
-1979,"Queensland",10829.8
-1979,"South.Australia",6668.1
-1979,"Tasmania",2066.7
-1979,"Victoria",19951.1
-1979,"Western.Australia",6409.1
-1980,"Australian.Capital.Territory",1191.3
-1980,"New.South.Wales",26627.6
-1980,"Northern.Territory",635.6
-1980,"Queensland",11239.9
-1980,"South.Australia",6633.7
-1980,"Tasmania",2069.7
-1980,"Victoria",20338.3
-1980,"Western.Australia",6675.6
-1981,"Australian.Capital.Territory",1226.3
-1981,"New.South.Wales",27032.4
-1981,"Northern.Territory",686.7
-1981,"Queensland",11660.4
-1981,"South.Australia",6749.2
-1981,"Tasmania",2094.8
-1981,"Victoria",20686.1
-1981,"Western.Australia",6861.9
-1982,"Australian.Capital.Territory",1211.4
-1982,"New.South.Wales",26853.6
-1982,"Northern.Territory",710.4
-1982,"Queensland",11978.6
-1982,"South.Australia",6731
-1982,"Tasmania",2015.9
-1982,"Victoria",20532.6
-1982,"Western.Australia",6944.6
-1983,"Australian.Capital.Territory",1276.6
-1983,"New.South.Wales",26134.2
-1983,"Northern.Territory",716.9
-1983,"Queensland",11838.8
-1983,"South.Australia",6545.6
-1983,"Tasmania",1997.5
-1983,"Victoria",20171.4
-1983,"Western.Australia",6923
-1984,"Australian.Capital.Territory",1369.6
-1984,"New.South.Wales",26898.3
-1984,"Northern.Territory",682.7
-1984,"Queensland",12196.9
-1984,"South.Australia",6800.4
-1984,"Tasmania",2043
-1984,"Victoria",20778.5
-1984,"Western.Australia",7156.8
-1985,"Australian.Capital.Territory",1449.7
-1985,"New.South.Wales",27481.9
-1985,"Northern.Territory",790.9
-1985,"Queensland",12615.2
-1985,"South.Australia",6993.5
-1985,"Tasmania",2164.2
-1985,"Victoria",21360.1
-1985,"Western.Australia",7514.1
-1986,"Australian.Capital.Territory",1529.1
-1986,"New.South.Wales",28366
-1986,"Northern.Territory",862
-1986,"Queensland",13327.3
-1986,"South.Australia",7238.8
-1986,"Tasmania",2196.8
-1986,"Victoria",22257.5
-1986,"Western.Australia",7916.4
-1987,"Australian.Capital.Territory",1560
-1987,"New.South.Wales",28889.8
-1987,"Northern.Territory",862.5
-1987,"Queensland",13604.7
-1987,"South.Australia",7292.7
-1987,"Tasmania",2201.5
-1987,"Victoria",22998.7
-1987,"Western.Australia",8135.1
+Date,State,Total_Employed
+1978,Australian Capital Territory,1055.7
+1978,New South Wales,23282.7
+1978,Northern Territory,504.2
+1978,Queensland,9677.3
+1978,South Australia,6142.5
+1978,Tasmania,1831.5
+1978,Victoria,18130.1
+1978,Western Australia,5796.7
+1979,Australian Capital Territory,1134.3
+1979,New South Wales,25689.5
+1979,Northern Territory,578.9
+1979,Queensland,10829.8
+1979,South Australia,6668.1
+1979,Tasmania,2066.7
+1979,Victoria,19951.1
+1979,Western Australia,6409.1
+1980,Australian Capital Territory,1191.3
+1980,New South Wales,26627.6
+1980,Northern Territory,635.6
+1980,Queensland,11239.9
+1980,South Australia,6633.7
+1980,Tasmania,2069.7
+1980,Victoria,20338.3
+1980,Western Australia,6675.6
+1981,Australian Capital Territory,1226.3
+1981,New South Wales,27032.4
+1981,Northern Territory,686.7
+1981,Queensland,11660.4
+1981,South Australia,6749.2
+1981,Tasmania,2094.8
+1981,Victoria,20686.1
+1981,Western Australia,6861.9
+1982,Australian Capital Territory,1211.4
+1982,New South Wales,26853.6
+1982,Northern Territory,710.4
+1982,Queensland,11978.6
+1982,South Australia,6731
+1982,Tasmania,2015.9
+1982,Victoria,20532.6
+1982,Western Australia,6944.6
+1983,Australian Capital Territory,1276.6
+1983,New South Wales,26134.2
+1983,Northern Territory,716.9
+1983,Queensland,11838.8
+1983,South Australia,6545.6
+1983,Tasmania,1997.5
+1983,Victoria,20171.4
+1983,Western Australia,6923
+1984,Australian Capital Territory,1369.6
+1984,New South Wales,26898.3
+1984,Northern Territory,682.7
+1984,Queensland,12196.9
+1984,South Australia,6800.4
+1984,Tasmania,2043
+1984,Victoria,20778.5
+1984,Western Australia,7156.8
+1985,Australian Capital Territory,1449.7
+1985,New South Wales,27481.9
+1985,Northern Territory,790.9
+1985,Queensland,12615.2
+1985,South Australia,6993.5
+1985,Tasmania,2164.2
+1985,Victoria,21360.1
+1985,Western Australia,7514.1
+1986,Australian Capital Territory,1529.1
+1986,New South Wales,28366
+1986,Northern Territory,862
+1986,Queensland,13327.3
+1986,South Australia,7238.8
+1986,Tasmania,2196.8
+1986,Victoria,22257.5
+1986,Western Australia,7916.4
+1987,Australian Capital Territory,1560
+1987,New South Wales,28889.8
+1987,Northern Territory,862.5
+1987,Queensland,13604.7
+1987,South Australia,7292.7
+1987,Tasmania,2201.5
+1987,Victoria,22998.7
+1987,Western Australia,8135.1
