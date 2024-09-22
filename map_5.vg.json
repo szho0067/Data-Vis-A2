@@ -1,9 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Percentage of Employed People within the State",
     "width": 300,
     "height": 300,
     "data": {
-      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/aggregated_employment_data.csv"
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/aggregated_employment_data_average.csv"
     },
     "transform": [
       {
@@ -26,7 +27,7 @@
         "bind": {
           "input": "range",
           "min": 1978,
-          "max": 1987,
+          "max": 2024,
           "step": 1,
           "name": "Select the year:"
         }
@@ -35,10 +36,10 @@
     "projection": {"type": "naturalEarth1"},
     "mark": "geoshape",
     "encoding": {
-      "color": {"field": "Total_Employed", "type": "quantitative"},
+      "color": {"field": "Average_Employed", "type": "quantitative"},
       "tooltip": [
         {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
-        {"field": "Total_Employed", "type": "quantitative"}
+        {"field": "Average_Employed", "type": "quantitative"}
       ]
     }
   }
