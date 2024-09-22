@@ -11,10 +11,12 @@
 <body>
     <div id="vis"></div>
     <script type="text/javascript">
-        const spec = {
-            // Place your Vega-Lite JSON specification here
-        };
-        vegaEmbed('#vis', spec);
+        // No need to define spec, directly pass the URL to vegaEmbed
+        vegaEmbed('#vis', 'https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/map_5.vg.json')
+        .then(function(result) {
+            
+        })
+        .catch(console.error);
     </script>
 </body>
 </html>
