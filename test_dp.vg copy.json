@@ -1,7 +1,7 @@
 {
   "data": {
     "name": "industry_pay_data",
-    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay.csv"
+    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay%20V2.csv"
   },
   "transform": [
     {
@@ -22,14 +22,14 @@
     }
   ],
   "height": 400,
-  "width": 600,
+  "width": 450,
   "encoding": {
     "x": {
       "field": "Median Weekly Earnings",
       "type": "quantitative",
       "title": "Median Weekly Earnings ($)",
       "scale": {
-        "domain": [0, 2000]  
+        "domain": [1, 2800]  
       }
     },
     "y": {

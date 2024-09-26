@@ -1,0 +1,780 @@
+Date,Industry,Average_Employed
+1984,Accommodation and Food Services,329.6
+1984,Administrative and Support Services,122
+1984,Arts and Recreation Services,70.6
+1984,Construction,448.3
+1984,Education and Training,459.1
+1984,"Electricity, Gas, Water and Waste Services",152.1
+1984,Financial and Insurance Services,261.7
+1984,Health Care and Social Assistance,536.8
+1984,Information Media and Telecommunications,158.1
+1984,Manufacturing,1098.8
+1984,Mining,94.1
+1984,Other Services,277
+1984,"Professional, Scientific and Technical Services ",258.2
+1984,Public Administration and Safety,381.9
+1984,Retail Trade,702.1
+1984,"Transport, Postal and Warehousing",387.2
+1984,Wholesale Trade,347.9
+1984," Agriculture, Forestry and Fishing ",410.7
+1984," Rental, Hiring and Real Estate Services",80
+1985,Accommodation and Food Services,329.325
+1985,Administrative and Support Services,126.75
+1985,Arts and Recreation Services,75.775
+1985,Construction,480.95
+1985,Education and Training,458.775
+1985,"Electricity, Gas, Water and Waste Services",146.475
+1985,Financial and Insurance Services,279.5
+1985,Health Care and Social Assistance,541.175
+1985,Information Media and Telecommunications,163.9
+1985,Manufacturing,1079.725
+1985,Mining,99.625
+1985,Other Services,288.2
+1985,"Professional, Scientific and Technical Services ",272.625
+1985,Public Administration and Safety,386.875
+1985,Retail Trade,707.275
+1985,"Transport, Postal and Warehousing",407.2
+1985,Wholesale Trade,354.65
+1985," Agriculture, Forestry and Fishing ",411.65
+1985," Rental, Hiring and Real Estate Services",92.25
+1986,Accommodation and Food Services,349.95
+1986,Administrative and Support Services,136.25
+1986,Arts and Recreation Services,77.85
+1986,Construction,489.675
+1986,Education and Training,468.7
+1986,"Electricity, Gas, Water and Waste Services",150.45
+1986,Financial and Insurance Services,302.9
+1986,Health Care and Social Assistance,576.975
+1986,Information Media and Telecommunications,166.65
+1986,Manufacturing,1081.6
+1986,Mining,102.025
+1986,Other Services,306.275
+1986,"Professional, Scientific and Technical Services ",293.675
+1986,Public Administration and Safety,397.5
+1986,Retail Trade,753.375
+1986,"Transport, Postal and Warehousing",421.5
+1986,Wholesale Trade,361.4
+1986," Agriculture, Forestry and Fishing ",424.2
+1986," Rental, Hiring and Real Estate Services",87.475
+1987,Accommodation and Food Services,369.8
+1987,Administrative and Support Services,145.1
+1987,Arts and Recreation Services,84.025
+1987,Construction,503.9
+1987,Education and Training,488.65
+1987,"Electricity, Gas, Water and Waste Services",136.7
+1987,Financial and Insurance Services,319.8
+1987,Health Care and Social Assistance,591.575
+1987,Information Media and Telecommunications,165.95
+1987,Manufacturing,1092.45
+1987,Mining,101.85
+1987,Other Services,316.175
+1987,"Professional, Scientific and Technical Services ",312.8
+1987,Public Administration and Safety,415.875
+1987,Retail Trade,766.975
+1987,"Transport, Postal and Warehousing",414.375
+1987,Wholesale Trade,371.325
+1987," Agriculture, Forestry and Fishing ",411.275
+1987," Rental, Hiring and Real Estate Services",91.525
+1988,Accommodation and Food Services,400.8
+1988,Administrative and Support Services,153.675
+1988,Arts and Recreation Services,84.025
+1988,Construction,535.8
+1988,Education and Training,490.425
+1988,"Electricity, Gas, Water and Waste Services",131.3
+1988,Financial and Insurance Services,333.075
+1988,Health Care and Social Assistance,610.875
+1988,Information Media and Telecommunications,170.65
+1988,Manufacturing,1126.65
+1988,Mining,95.7
+1988,Other Services,338.625
+1988,"Professional, Scientific and Technical Services ",334.1
+1988,Public Administration and Safety,409.725
+1988,Retail Trade,807.925
+1988,"Transport, Postal and Warehousing",415.575
+1988,Wholesale Trade,393.25
+1988," Agriculture, Forestry and Fishing ",430.55
+1988," Rental, Hiring and Real Estate Services",103.3
+1989,Accommodation and Food Services,421.45
+1989,Administrative and Support Services,164.075
+1989,Arts and Recreation Services,96.45
+1989,Construction,600.8
+1989,Education and Training,509.45
+1989,"Electricity, Gas, Water and Waste Services",128.35
+1989,Financial and Insurance Services,351.25
+1989,Health Care and Social Assistance,645.575
+1989,Information Media and Telecommunications,176.875
+1989,Manufacturing,1162.675
+1989,Mining,103.1
+1989,Other Services,348.15
+1989,"Professional, Scientific and Technical Services ",354.775
+1989,Public Administration and Safety,407.85
+1989,Retail Trade,852.125
+1989,"Transport, Postal and Warehousing",428.175
+1989,Wholesale Trade,419.05
+1989," Agriculture, Forestry and Fishing ",425.2
+1989," Rental, Hiring and Real Estate Services",120.95
+1990,Accommodation and Food Services,446.2
+1990,Administrative and Support Services,171.15
+1990,Arts and Recreation Services,91.725
+1990,Construction,592.95
+1990,Education and Training,538.825
+1990,"Electricity, Gas, Water and Waste Services",117.625
+1990,Financial and Insurance Services,366.425
+1990,Health Care and Social Assistance,656.45
+1990,Information Media and Telecommunications,175.75
+1990,Manufacturing,1129.55
+1990,Mining,98.55
+1990,Other Services,354.425
+1990,"Professional, Scientific and Technical Services ",369.7
+1990,Public Administration and Safety,446.6
+1990,Retail Trade,867.175
+1990,"Transport, Postal and Warehousing",424.725
+1990,Wholesale Trade,428.925
+1990," Agriculture, Forestry and Fishing ",435.75
+1990," Rental, Hiring and Real Estate Services",124.05
+1991,Accommodation and Food Services,462.8
+1991,Administrative and Support Services,178.775
+1991,Arts and Recreation Services,100
+1991,Construction,538.275
+1991,Education and Training,537.225
+1991,"Electricity, Gas, Water and Waste Services",114.275
+1991,Financial and Insurance Services,345.625
+1991,Health Care and Social Assistance,682.425
+1991,Information Media and Telecommunications,171.625
+1991,Manufacturing,1057.525
+1991,Mining,91
+1991,Other Services,354.25
+1991,"Professional, Scientific and Technical Services ",383.975
+1991,Public Administration and Safety,439.9
+1991,Retail Trade,834.575
+1991,"Transport, Postal and Warehousing",423.35
+1991,Wholesale Trade,423.275
+1991," Agriculture, Forestry and Fishing ",410.425
+1991," Rental, Hiring and Real Estate Services",112.75
+1992,Accommodation and Food Services,468.35
+1992,Administrative and Support Services,187.525
+1992,Arts and Recreation Services,96.95
+1992,Construction,520.975
+1992,Education and Training,553.275
+1992,"Electricity, Gas, Water and Waste Services",116.775
+1992,Financial and Insurance Services,327.85
+1992,Health Care and Social Assistance,686.125
+1992,Information Media and Telecommunications,168.35
+1992,Manufacturing,1047.6
+1992,Mining,86.375
+1992,Other Services,367.875
+1992,"Professional, Scientific and Technical Services ",394
+1992,Public Administration and Safety,443.025
+1992,Retail Trade,843.1
+1992,"Transport, Postal and Warehousing",394.95
+1992,Wholesale Trade,406.25
+1992," Agriculture, Forestry and Fishing ",384.475
+1992," Rental, Hiring and Real Estate Services",113.45
+1993,Accommodation and Food Services,467.625
+1993,Administrative and Support Services,185.4
+1993,Arts and Recreation Services,99.3
+1993,Construction,547.375
+1993,Education and Training,565.15
+1993,"Electricity, Gas, Water and Waste Services",108.125
+1993,Financial and Insurance Services,313.95
+1993,Health Care and Social Assistance,684.475
+1993,Information Media and Telecommunications,162.225
+1993,Manufacturing,1033.075
+1993,Mining,87.025
+1993,Other Services,363.55
+1993,"Professional, Scientific and Technical Services ",366
+1993,Public Administration and Safety,468.275
+1993,Retail Trade,853.05
+1993,"Transport, Postal and Warehousing",391.525
+1993,Wholesale Trade,418.2
+1993," Agriculture, Forestry and Fishing ",389.95
+1993," Rental, Hiring and Real Estate Services",117.25
+1994,Accommodation and Food Services,503.5
+1994,Administrative and Support Services,212.1
+1994,Arts and Recreation Services,112.2
+1994,Construction,568.025
+1994,Education and Training,562.975
+1994,"Electricity, Gas, Water and Waste Services",103.5
+1994,Financial and Insurance Services,317.45
+1994,Health Care and Social Assistance,703.3
+1994,Information Media and Telecommunications,180.825
+1994,Manufacturing,1065.8
+1994,Mining,84.65
+1994,Other Services,372.25
+1994,"Professional, Scientific and Technical Services ",420.825
+1994,Public Administration and Safety,456.45
+1994,Retail Trade,879.825
+1994,"Transport, Postal and Warehousing",403.5
+1994,Wholesale Trade,415.85
+1994," Agriculture, Forestry and Fishing ",385.525
+1994," Rental, Hiring and Real Estate Services",116.775
+1995,Accommodation and Food Services,540.2
+1995,Administrative and Support Services,247.475
+1995,Arts and Recreation Services,123.275
+1995,Construction,598.35
+1995,Education and Training,589.1
+1995,"Electricity, Gas, Water and Waste Services",95.65
+1995,Financial and Insurance Services,314.675
+1995,Health Care and Social Assistance,732.85
+1995,Information Media and Telecommunications,187.825
+1995,Manufacturing,1071.425
+1995,Mining,83.15
+1995,Other Services,397.625
+1995,"Professional, Scientific and Technical Services ",472.3
+1995,Public Administration and Safety,471.8
+1995,Retail Trade,896.725
+1995,"Transport, Postal and Warehousing",414.5
+1995,Wholesale Trade,424.4
+1995," Agriculture, Forestry and Fishing ",390.125
+1995," Rental, Hiring and Real Estate Services",118.825
+1996,Accommodation and Food Services,536.025
+1996,Administrative and Support Services,241.3
+1996,Arts and Recreation Services,119.6
+1996,Construction,593.95
+1996,Education and Training,599.25
+1996,"Electricity, Gas, Water and Waste Services",84.275
+1996,Financial and Insurance Services,317.025
+1996,Health Care and Social Assistance,755.375
+1996,Information Media and Telecommunications,203.475
+1996,Manufacturing,1067.4
+1996,Mining,86.75
+1996,Other Services,409.525
+1996,"Professional, Scientific and Technical Services ",505.425
+1996,Public Administration and Safety,472.925
+1996,Retail Trade,934.6
+1996,"Transport, Postal and Warehousing",429.05
+1996,Wholesale Trade,409
+1996," Agriculture, Forestry and Fishing ",401.1
+1996," Rental, Hiring and Real Estate Services",114.85
+1997,Accommodation and Food Services,561.175
+1997,Administrative and Support Services,255.575
+1997,Arts and Recreation Services,130.6
+1997,Construction,577.525
+1997,Education and Training,593.225
+1997,"Electricity, Gas, Water and Waste Services",79.3
+1997,Financial and Insurance Services,315.2
+1997,Health Care and Social Assistance,767.7
+1997,Information Media and Telecommunications,195.95
+1997,Manufacturing,1083.525
+1997,Mining,80.55
+1997,Other Services,403.925
+1997,"Professional, Scientific and Technical Services ",532.25
+1997,Public Administration and Safety,465.75
+1997,Retail Trade,921.825
+1997,"Transport, Postal and Warehousing",430.325
+1997,Wholesale Trade,406.9
+1997," Agriculture, Forestry and Fishing ",409.175
+1997," Rental, Hiring and Real Estate Services",123.05
+1998,Accommodation and Food Services,569.575
+1998,Administrative and Support Services,288.1
+1998,Arts and Recreation Services,129.625
+1998,Construction,614.65
+1998,Education and Training,608.025
+1998,"Electricity, Gas, Water and Waste Services",79
+1998,Financial and Insurance Services,318.3
+1998,Health Care and Social Assistance,798.25
+1998,Information Media and Telecommunications,185.375
+1998,Manufacturing,1044.95
+1998,Mining,84.25
+1998,Other Services,410.85
+1998,"Professional, Scientific and Technical Services ",550.825
+1998,Public Administration and Safety,450.975
+1998,Retail Trade,951.85
+1998,"Transport, Postal and Warehousing",431.85
+1998,Wholesale Trade,419.225
+1998," Agriculture, Forestry and Fishing ",411.025
+1998," Rental, Hiring and Real Estate Services",129.45
+1999,Accommodation and Food Services,583.05
+1999,Administrative and Support Services,300.575
+1999,Arts and Recreation Services,133.85
+1999,Construction,650.35
+1999,Education and Training,629.45
+1999,"Electricity, Gas, Water and Waste Services",78.9
+1999,Financial and Insurance Services,309.575
+1999,Health Care and Social Assistance,801.8
+1999,Information Media and Telecommunications,190.7
+1999,Manufacturing,1019.5
+1999,Mining,78.275
+1999,Other Services,413.575
+1999,"Professional, Scientific and Technical Services ",562.55
+1999,Public Administration and Safety,475
+1999,Retail Trade,980.675
+1999,"Transport, Postal and Warehousing",444.2
+1999,Wholesale Trade,423.975
+1999," Agriculture, Forestry and Fishing ",425.825
+1999," Rental, Hiring and Real Estate Services",130.8
+2000,Accommodation and Food Services,616.125
+2000,Administrative and Support Services,329.725
+2000,Arts and Recreation Services,138.225
+2000,Construction,684.925
+2000,Education and Training,629.225
+2000,"Electricity, Gas, Water and Waste Services",79.575
+2000,Financial and Insurance Services,330.05
+2000,Health Care and Social Assistance,832.575
+2000,Information Media and Telecommunications,221.975
+2000,Manufacturing,1071
+2000,Mining,79.825
+2000,Other Services,391.5
+2000,"Professional, Scientific and Technical Services ",583.025
+2000,Public Administration and Safety,483.65
+2000,Retail Trade,988.1
+2000,"Transport, Postal and Warehousing",454.55
+2000,Wholesale Trade,376.325
+2000," Agriculture, Forestry and Fishing ",430.425
+2000," Rental, Hiring and Real Estate Services",140.05
+2001,Accommodation and Food Services,625.85
+2001,Administrative and Support Services,330.525
+2001,Arts and Recreation Services,136.275
+2001,Construction,662.425
+2001,Education and Training,648.925
+2001,"Electricity, Gas, Water and Waste Services",81.925
+2001,Financial and Insurance Services,340.925
+2001,Health Care and Social Assistance,880.525
+2001,Information Media and Telecommunications,221.625
+2001,Manufacturing,1041.275
+2001,Mining,78.55
+2001,Other Services,413.95
+2001,"Professional, Scientific and Technical Services ",600.675
+2001,Public Administration and Safety,509.1
+2001,Retail Trade,1023.125
+2001,"Transport, Postal and Warehousing",463.675
+2001,Wholesale Trade,355.825
+2001," Agriculture, Forestry and Fishing ",427.3
+2001," Rental, Hiring and Real Estate Services",145.725
+2002,Accommodation and Food Services,632.775
+2002,Administrative and Support Services,328.725
+2002,Arts and Recreation Services,151.625
+2002,Construction,693.775
+2002,Education and Training,673.825
+2002,"Electricity, Gas, Water and Waste Services",83.275
+2002,Financial and Insurance Services,339.1
+2002,Health Care and Social Assistance,914.575
+2002,Information Media and Telecommunications,216.575
+2002,Manufacturing,1056.075
+2002,Mining,83.925
+2002,Other Services,418.075
+2002,"Professional, Scientific and Technical Services ",600.85
+2002,Public Administration and Safety,549.15
+2002,Retail Trade,1056.525
+2002,"Transport, Postal and Warehousing",443.825
+2002,Wholesale Trade,367.65
+2002," Agriculture, Forestry and Fishing ",401.65
+2002," Rental, Hiring and Real Estate Services",154.05
+2003,Accommodation and Food Services,642.375
+2003,Administrative and Support Services,346.1
+2003,Arts and Recreation Services,145.325
+2003,Construction,745.3
+2003,Education and Training,699.1
+2003,"Electricity, Gas, Water and Waste Services",91.275
+2003,Financial and Insurance Services,345.05
+2003,Health Care and Social Assistance,913.9
+2003,Information Media and Telecommunications,222.725
+2003,Manufacturing,1032.9
+2003,Mining,88.675
+2003,Other Services,421.65
+2003,"Professional, Scientific and Technical Services ",619.725
+2003,Public Administration and Safety,579.475
+2003,Retail Trade,1108.2
+2003,"Transport, Postal and Warehousing",465.225
+2003,Wholesale Trade,375.15
+2003," Agriculture, Forestry and Fishing ",366.925
+2003," Rental, Hiring and Real Estate Services",167.7
+2004,Accommodation and Food Services,654.425
+2004,Administrative and Support Services,338.425
+2004,Arts and Recreation Services,154.45
+2004,Construction,791.875
+2004,Education and Training,707.85
+2004,"Electricity, Gas, Water and Waste Services",90.55
+2004,Financial and Insurance Services,344.625
+2004,Health Care and Social Assistance,956.375
+2004,Information Media and Telecommunications,219.35
+2004,Manufacturing,1039.6
+2004,Mining,100.15
+2004,Other Services,416.175
+2004,"Professional, Scientific and Technical Services ",624.425
+2004,Public Administration and Safety,591.825
+2004,Retail Trade,1100.15
+2004,"Transport, Postal and Warehousing",480.375
+2004,Wholesale Trade,379.4
+2004," Agriculture, Forestry and Fishing ",355.85
+2004," Rental, Hiring and Real Estate Services",174.725
+2005,Accommodation and Food Services,682.925
+2005,Administrative and Support Services,352.4
+2005,Arts and Recreation Services,171.025
+2005,Construction,843.05
+2005,Education and Training,713.125
+2005,"Electricity, Gas, Water and Waste Services",99.275
+2005,Financial and Insurance Services,370.675
+2005,Health Care and Social Assistance,990.125
+2005,Information Media and Telecommunications,236.825
+2005,Manufacturing,1021.4
+2005,Mining,118.55
+2005,Other Services,403.975
+2005,"Professional, Scientific and Technical Services ",682.85
+2005,Public Administration and Safety,606.65
+2005,Retail Trade,1164.55
+2005,"Transport, Postal and Warehousing",495.3
+2005,Wholesale Trade,370.2
+2005," Agriculture, Forestry and Fishing ",352.725
+2005," Rental, Hiring and Real Estate Services",177
+2006,Accommodation and Food Services,658.25
+2006,Administrative and Support Services,349.525
+2006,Arts and Recreation Services,175.025
+2006,Construction,900.825
+2006,Education and Training,735.6
+2006,"Electricity, Gas, Water and Waste Services",105.525
+2006,Financial and Insurance Services,383.25
+2006,Health Care and Social Assistance,1047.35
+2006,Information Media and Telecommunications,239.95
+2006,Manufacturing,1009.45
+2006,Mining,131.15
+2006,Other Services,414.025
+2006,"Professional, Scientific and Technical Services ",728.8
+2006,Public Administration and Safety,620.425
+2006,Retail Trade,1159.55
+2006,"Transport, Postal and Warehousing",500.775
+2006,Wholesale Trade,390.8
+2006," Agriculture, Forestry and Fishing ",344.175
+2006," Rental, Hiring and Real Estate Services",193.175
+2007,Accommodation and Food Services,695.625
+2007,Administrative and Support Services,353.5
+2007,Arts and Recreation Services,190.85
+2007,Construction,936.375
+2007,Education and Training,762.45
+2007,"Electricity, Gas, Water and Waste Services",104.275
+2007,Financial and Insurance Services,404.3
+2007,Health Care and Social Assistance,1070.2
+2007,Information Media and Telecommunications,240.675
+2007,Manufacturing,1027.75
+2007,Mining,136.025
+2007,Other Services,440.075
+2007,"Professional, Scientific and Technical Services ",744.55
+2007,Public Administration and Safety,637.15
+2007,Retail Trade,1196.85
+2007,"Transport, Postal and Warehousing",536.2
+2007,Wholesale Trade,386.75
+2007," Agriculture, Forestry and Fishing ",345.575
+2007," Rental, Hiring and Real Estate Services",198.45
+2008,Accommodation and Food Services,704.35
+2008,Administrative and Support Services,341.075
+2008,Arts and Recreation Services,186.75
+2008,Construction,986.45
+2008,Education and Training,801.375
+2008,"Electricity, Gas, Water and Waste Services",121.55
+2008,Financial and Insurance Services,402.95
+2008,Health Care and Social Assistance,1100.575
+2008,Information Media and Telecommunications,222.825
+2008,Manufacturing,1044.8
+2008,Mining,163.45
+2008,Other Services,454.15
+2008,"Professional, Scientific and Technical Services ",789.375
+2008,Public Administration and Safety,643.4
+2008,Retail Trade,1213.325
+2008,"Transport, Postal and Warehousing",567.1
+2008,Wholesale Trade,403.9
+2008," Agriculture, Forestry and Fishing ",344.725
+2008," Rental, Hiring and Real Estate Services",203.125
+2009,Accommodation and Food Services,725.05
+2009,Administrative and Support Services,354.95
+2009,Arts and Recreation Services,200.725
+2009,Construction,983.775
+2009,Education and Training,808.85
+2009,"Electricity, Gas, Water and Waste Services",132.975
+2009,Financial and Insurance Services,395.85
+2009,Health Care and Social Assistance,1185.875
+2009,Information Media and Telecommunications,217.275
+2009,Manufacturing,998.25
+2009,Mining,162.925
+2009,Other Services,441
+2009,"Professional, Scientific and Technical Services ",787.15
+2009,Public Administration and Safety,667.075
+2009,Retail Trade,1192.45
+2009,"Transport, Postal and Warehousing",582.55
+2009,Wholesale Trade,407.225
+2009," Agriculture, Forestry and Fishing ",348.475
+2009," Rental, Hiring and Real Estate Services",182.6
+2010,Accommodation and Food Services,736.725
+2010,Administrative and Support Services,383.475
+2010,Arts and Recreation Services,190.35
+2010,Construction,998.65
+2010,Education and Training,839.775
+2010,"Electricity, Gas, Water and Waste Services",140.975
+2010,Financial and Insurance Services,393.625
+2010,Health Care and Social Assistance,1232.425
+2010,Information Media and Telecommunications,211.325
+2010,Manufacturing,978.65
+2010,Mining,187.325
+2010,Other Services,455.425
+2010,"Professional, Scientific and Technical Services ",841.85
+2010,Public Administration and Safety,688.4
+2010,Retail Trade,1182.775
+2010,"Transport, Postal and Warehousing",571.3
+2010,Wholesale Trade,411.3
+2010," Agriculture, Forestry and Fishing ",355.075
+2010," Rental, Hiring and Real Estate Services",191.775
+2011,Accommodation and Food Services,767.05
+2011,Administrative and Support Services,395.275
+2011,Arts and Recreation Services,208.025
+2011,Construction,1013.65
+2011,Education and Training,842.925
+2011,"Electricity, Gas, Water and Waste Services",148
+2011,Financial and Insurance Services,417.975
+2011,Health Care and Social Assistance,1295.5
+2011,Information Media and Telecommunications,206.675
+2011,Manufacturing,947.1
+2011,Mining,219.725
+2011,Other Services,442.25
+2011,"Professional, Scientific and Technical Services ",856.025
+2011,Public Administration and Safety,716.275
+2011,Retail Trade,1199.85
+2011,"Transport, Postal and Warehousing",578.625
+2011,Wholesale Trade,411.875
+2011," Agriculture, Forestry and Fishing ",315.225
+2011," Rental, Hiring and Real Estate Services",195.2
+2012,Accommodation and Food Services,758.275
+2012,Administrative and Support Services,395.75
+2012,Arts and Recreation Services,208.65
+2012,Construction,982.5
+2012,Education and Training,875.55
+2012,"Electricity, Gas, Water and Waste Services",149.325
+2012,Financial and Insurance Services,420.025
+2012,Health Care and Social Assistance,1343.1
+2012,Information Media and Telecommunications,227.15
+2012,Manufacturing,947.975
+2012,Mining,263.625
+2012,Other Services,453
+2012,"Professional, Scientific and Technical Services ",902.675
+2012,Public Administration and Safety,702.8
+2012,Retail Trade,1195.05
+2012,"Transport, Postal and Warehousing",560.275
+2012,Wholesale Trade,406.675
+2012," Agriculture, Forestry and Fishing ",317.1
+2012," Rental, Hiring and Real Estate Services",208.9
+2013,Accommodation and Food Services,778.675
+2013,Administrative and Support Services,387.925
+2013,Arts and Recreation Services,208.2
+2013,Construction,1007.85
+2013,Education and Training,890.575
+2013,"Electricity, Gas, Water and Waste Services",146.625
+2013,Financial and Insurance Services,416.775
+2013,Health Care and Social Assistance,1377.4
+2013,Information Media and Telecommunications,204.5
+2013,Manufacturing,920.55
+2013,Mining,262.85
+2013,Other Services,458.475
+2013,"Professional, Scientific and Technical Services ",901.7
+2013,Public Administration and Safety,742.2
+2013,Retail Trade,1218.975
+2013,"Transport, Postal and Warehousing",592.125
+2013,Wholesale Trade,422.6
+2013," Agriculture, Forestry and Fishing ",299.3
+2013," Rental, Hiring and Real Estate Services",193.775
+2014,Accommodation and Food Services,775.75
+2014,Administrative and Support Services,380.925
+2014,Arts and Recreation Services,210.25
+2014,Construction,1031.325
+2014,Education and Training,914.075
+2014,"Electricity, Gas, Water and Waste Services",145.025
+2014,Financial and Insurance Services,416.35
+2014,Health Care and Social Assistance,1404.425
+2014,Information Media and Telecommunications,208.35
+2014,Manufacturing,922.45
+2014,Mining,242.75
+2014,Other Services,486.2
+2014,"Professional, Scientific and Technical Services ",924.525
+2014,Public Administration and Safety,727.325
+2014,Retail Trade,1235.6
+2014,"Transport, Postal and Warehousing",593.475
+2014,Wholesale Trade,386.125
+2014," Agriculture, Forestry and Fishing ",323.275
+2014," Rental, Hiring and Real Estate Services",214.95
+2015,Accommodation and Food Services,825.65
+2015,Administrative and Support Services,411.85
+2015,Arts and Recreation Services,228.2
+2015,Construction,1029.025
+2015,Education and Training,938
+2015,"Electricity, Gas, Water and Waste Services",144.875
+2015,Financial and Insurance Services,418.85
+2015,Health Care and Social Assistance,1499.25
+2015,Information Media and Telecommunications,214.7
+2015,Manufacturing,890.025
+2015,Mining,221.475
+2015,Other Services,478.9
+2015,"Professional, Scientific and Technical Services ",996.95
+2015,Public Administration and Safety,731.075
+2015,Retail Trade,1245.1
+2015,"Transport, Postal and Warehousing",609.95
+2015,Wholesale Trade,383.55
+2015," Agriculture, Forestry and Fishing ",311.025
+2015," Rental, Hiring and Real Estate Services",207.35
+2016,Accommodation and Food Services,844.25
+2016,Administrative and Support Services,436.425
+2016,Arts and Recreation Services,226.625
+2016,Construction,1060.175
+2016,Education and Training,958
+2016,"Electricity, Gas, Water and Waste Services",137.925
+2016,Financial and Insurance Services,429.6
+2016,Health Care and Social Assistance,1542.65
+2016,Information Media and Telecommunications,208.05
+2016,Manufacturing,904.05
+2016,Mining,217.775
+2016,Other Services,472.6
+2016,"Professional, Scientific and Technical Services ",1015.325
+2016,Public Administration and Safety,758.925
+2016,Retail Trade,1247.425
+2016,"Transport, Postal and Warehousing",623.475
+2016,Wholesale Trade,365.525
+2016," Agriculture, Forestry and Fishing ",314.725
+2016," Rental, Hiring and Real Estate Services",212.625
+2017,Accommodation and Food Services,868.9
+2017,Administrative and Support Services,410.725
+2017,Arts and Recreation Services,230.2
+2017,Construction,1131.95
+2017,Education and Training,1004.675
+2017,"Electricity, Gas, Water and Waste Services",140.45
+2017,Financial and Insurance Services,432.325
+2017,Health Care and Social Assistance,1622.325
+2017,Information Media and Telecommunications,216.725
+2017,Manufacturing,882.925
+2017,Mining,228.75
+2017,Other Services,504.975
+2017,"Professional, Scientific and Technical Services ",1010.4
+2017,Public Administration and Safety,767.25
+2017,Retail Trade,1256.225
+2017,"Transport, Postal and Warehousing",630.075
+2017,Wholesale Trade,363.45
+2017," Agriculture, Forestry and Fishing ",324.15
+2017," Rental, Hiring and Real Estate Services",206.725
+2018,Accommodation and Food Services,876.425
+2018,Administrative and Support Services,414.1
+2018,Arts and Recreation Services,244.15
+2018,Construction,1170.65
+2018,Education and Training,1024.25
+2018,"Electricity, Gas, Water and Waste Services",154.1
+2018,Financial and Insurance Services,440.925
+2018,Health Care and Social Assistance,1679.4
+2018,Information Media and Telecommunications,221.75
+2018,Manufacturing,927.825
+2018,Mining,253.775
+2018,Other Services,479.675
+2018,"Professional, Scientific and Technical Services ",1049.9
+2018,Public Administration and Safety,787.075
+2018,Retail Trade,1270.325
+2018,"Transport, Postal and Warehousing",639.125
+2018,Wholesale Trade,374.125
+2018," Agriculture, Forestry and Fishing ",334.125
+2018," Rental, Hiring and Real Estate Services",213.3
+2019,Accommodation and Food Services,903.2
+2019,Administrative and Support Services,452.225
+2019,Arts and Recreation Services,248.25
+2019,Construction,1168.8
+2019,Education and Training,1068.125
+2019,"Electricity, Gas, Water and Waste Services",158.175
+2019,Financial and Insurance Services,443.05
+2019,Health Care and Social Assistance,1717.175
+2019,Information Media and Telecommunications,206.45
+2019,Manufacturing,881.8
+2019,Mining,262.025
+2019,Other Services,512.6
+2019,"Professional, Scientific and Technical Services ",1135.125
+2019,Public Administration and Safety,840.6
+2019,Retail Trade,1263.475
+2019,"Transport, Postal and Warehousing",660.05
+2019,Wholesale Trade,393.075
+2019," Agriculture, Forestry and Fishing ",327.775
+2019," Rental, Hiring and Real Estate Services",209.875
+2020,Accommodation and Food Services,790.325
+2020,Administrative and Support Services,420.875
+2020,Arts and Recreation Services,209.075
+2020,Construction,1167.1
+2020,Education and Training,1083.85
+2020,"Electricity, Gas, Water and Waste Services",153.275
+2020,Financial and Insurance Services,473.6
+2020,Health Care and Social Assistance,1757.1
+2020,Information Media and Telecommunications,193.4
+2020,Manufacturing,862.65
+2020,Mining,263.35
+2020,Other Services,456.75
+2020,"Professional, Scientific and Technical Services ",1123.625
+2020,Public Administration and Safety,857.175
+2020,Retail Trade,1223.025
+2020,"Transport, Postal and Warehousing",625.1
+2020,Wholesale Trade,385.475
+2020," Agriculture, Forestry and Fishing ",346.375
+2020," Rental, Hiring and Real Estate Services",210.725
+2021,Accommodation and Food Services,843.625
+2021,Administrative and Support Services,415.025
+2021,Arts and Recreation Services,229.7
+2021,Construction,1142.2
+2021,Education and Training,1115.05
+2021,"Electricity, Gas, Water and Waste Services",146.3
+2021,Financial and Insurance Services,492.3
+2021,Health Care and Social Assistance,1844.725
+2021,Information Media and Telecommunications,185.075
+2021,Manufacturing,899.35
+2021,Mining,284.1
+2021,Other Services,526.875
+2021,"Professional, Scientific and Technical Services ",1192.1
+2021,Public Administration and Safety,888.875
+2021,Retail Trade,1273.65
+2021,"Transport, Postal and Warehousing",654.15
+2021,Wholesale Trade,365.45
+2021," Agriculture, Forestry and Fishing ",328.225
+2021," Rental, Hiring and Real Estate Services",216.375
+2022,Accommodation and Food Services,917.25
+2022,Administrative and Support Services,439.025
+2022,Arts and Recreation Services,233.4
+2022,Construction,1222.475
+2022,Education and Training,1143.55
+2022,"Electricity, Gas, Water and Waste Services",166.7
+2022,Financial and Insurance Services,549.525
+2022,Health Care and Social Assistance,2042.425
+2022,Information Media and Telecommunications,197.375
+2022,Manufacturing,847.525
+2022,Mining,301
+2022,Other Services,519.5
+2022,"Professional, Scientific and Technical Services ",1262.7
+2022,Public Administration and Safety,877.75
+2022,Retail Trade,1312.025
+2022,"Transport, Postal and Warehousing",698.175
+2022,Wholesale Trade,353.975
+2022," Agriculture, Forestry and Fishing ",300.55
+2022," Rental, Hiring and Real Estate Services",225.2
+2023,Accommodation and Food Services,923.325
+2023,Administrative and Support Services,419.125
+2023,Arts and Recreation Services,258.525
+2023,Construction,1313.8
+2023,Education and Training,1178.9
+2023,"Electricity, Gas, Water and Waste Services",162.35
+2023,Financial and Insurance Services,552.2
+2023,Health Care and Social Assistance,2165.2
+2023,Information Media and Telecommunications,192.525
+2023,Manufacturing,900.75
+2023,Mining,311.55
+2023,Other Services,520.975
+2023,"Professional, Scientific and Technical Services ",1315.925
+2023,Public Administration and Safety,919.275
+2023,Retail Trade,1330.85
+2023,"Transport, Postal and Warehousing",721
+2023,Wholesale Trade,376.7
+2023," Agriculture, Forestry and Fishing ",302.475
+2023," Rental, Hiring and Real Estate Services",210.4
+2024,Accommodation and Food Services,940.9
+2024,Administrative and Support Services,441.7666667
+2024,Arts and Recreation Services,275.4666667
+2024,Construction,1323.9
+2024,Education and Training,1231.633333
+2024,"Electricity, Gas, Water and Waste Services",198.3666667
+2024,Financial and Insurance Services,529.0333333
+2024,Health Care and Social Assistance,2252.9
+2024,Information Media and Telecommunications,193.2333333
+2024,Manufacturing,895.0666667
+2024,Mining,292.7666667
+2024,Other Services,521.9
+2024,"Professional, Scientific and Technical Services ",1322.5
+2024,Public Administration and Safety,949.0666667
+2024,Retail Trade,1330.733333
+2024,"Transport, Postal and Warehousing",726.1
+2024,Wholesale Trade,390.0666667
+2024," Agriculture, Forestry and Fishing ",328.6
+2024," Rental, Hiring and Real Estate Services",239.3333333
