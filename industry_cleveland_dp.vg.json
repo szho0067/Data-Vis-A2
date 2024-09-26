@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay.csv"
+    },
+    "mark": "point",
+    "encoding": {
+      "y": {
+        "field": "State and territory",
+        "type": "nominal",
+        "axis": {"title": "State and Territory"}
+      },
+      "x": {
+        "field": "Median Weekly Earnings",
+        "type": "quantitative",
+        "axis": {"title": "Median Weekly Earnings"}
+      },
+      "color": {
+        "field": "Industry",
+        "type": "nominal",
+        "legend": {"title": "Industry"}
+      },
+      "tooltip": [
+        {"field": "Industry", "type": "nominal"},
+        {"field": "Median Weekly Earnings", "type": "quantitative"},
+        {"field": "Survey month", "type": "quantitative", "title": "Year"}
+      ]
+    },
+    "transform": [
+      {"filter": {"selection": "yearSelector"}}
+    ],
+    "selection": {
+      "yearSelector": {
+        "type": "single",
+        "fields": ["Survey month"],
+        "bind": {
+          "input": "range",
+          "min": 2014,
+          "max": 2020,
+          "step": 1,
+          "name": "Select Year: "
+        }
+      }
+    }
+  }
+  
