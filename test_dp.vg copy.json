@@ -1,64 +1,91 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
+    "name": "industry_pay_data",
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay.csv"
   },
   "transform": [
-    {"filter": "datum['Years'] == selectYear"}
+    {
+      "filter": "datum.Years == select_year"
+    },
+    {
+      "calculate": "parseFloat(datum['Median Weekly Earnings'])",
+      "as": "Median Weekly Earnings"
+    }
   ],
   "params": [
     {
-      "name": "selectYear",
+      "name": "select_year",
       "value": 2014,
       "bind": {
         "input": "range",
         "min": 2014,
         "max": 2023,
         "step": 1,
-        "name": "Select Year: "
+        "name": "Select Year:"
       }
     }
   ],
-  "height": 300,
-  "width": 450,
+  "height": 400,
+  "width": 600,
   "encoding": {
-    "y": {
-      "field": "State and territory",
-      "type": "nominal",
-      "axis": {"title": "State and Territory"}
-    },
     "x": {
       "field": "Median Weekly Earnings",
       "type": "quantitative",
-      "scale": {"domain": [0, 2500]},
-      "title": "Median Weekly Earnings"
+      "title": "Median Weekly Earnings ($)",
+      "scale": {
+        "domain": [0, 2000]  
+      }
+    },
+    "y": {
+      "field": "State and territory",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "Industry",
+      "type": "nominal",
+      "title": "Industry"
     }
   },
   "layer": [
     {
       "mark": "line",
       "encoding": {
-        "detail": {"field": "State and Territory", "type": "nominal"},
-        "color": {"value": "#BBBBBB"}
+        "detail": {
+          "field": "State and territory",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#BBBBBB"
+        }
       }
     },
     {
-      "mark": {"type": "point", "filled": true},
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "opacity": 0.6
+      },
       "encoding": {
         "tooltip": [
-          {"field": "Industry", "type": "nominal", "title": "Industry"},
-          {"field": "State and territory", "type": "nominal", "title": "State"},
+          {
+            "field": "Industry",
+            "type": "nominal",
+            "title": "Industry"
+          },
           {
             "field": "Median Weekly Earnings",
             "type": "quantitative",
-            "title": "Median Weekly Earnings"
+            "title": "Median Weekly Earnings ($)"
+          },
+          {
+            "field": "Years",
+            "type": "quantitative",
+            "title": "Year"
           }
         ],
         "color": {
           "field": "Industry",
-          "type": "nominal",
-          "legend": {"title": "Industry"},
-          "scale": {"scheme": "category10"}
+          "type": "nominal"
         }
       }
     }
