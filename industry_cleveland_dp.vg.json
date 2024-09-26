@@ -27,12 +27,12 @@
       ]
     },
     "transform": [
-      {"filter": "datum.year == yearSelector"}
+      {"filter": {"param": "yearSelector"}}
     ],
-    "selection": {
-      "yearSelector": {
-        "type": "single",
-        "fields": ["Survey month"],
+    "params": [
+      {
+        "name": "yearSelector",
+        "value": 2014,
         "bind": {
           "input": "range",
           "min": 2014,
@@ -41,6 +41,6 @@
           "name": "Select Year: "
         }
       }
-    }
+    ]
   }
   
