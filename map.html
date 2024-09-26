@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vega-Lite Visualization</title>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+<script src="vega_lite_vs.js"></script>
+<title>Percentage of Employed People within Each State </title>
 </head>
 <body>
-    <div id="vis"></div>
-    <script type="text/javascript">
-        // No need to define spec, directly pass the URL to vegaEmbed
-        vegaEmbed('#vis', 'https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/map_5.vg.json')
-        .then(function(result) {
-            
-        })
-        .catch(console.error);
-    </script>
+<h1>Percentage of Employed People within the State</h1>
+<div id="map">
+</div>
 </body>
 </html>

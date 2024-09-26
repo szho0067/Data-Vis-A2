@@ -36,10 +36,10 @@
     "projection": {"type": "naturalEarth1"},
     "mark": "geoshape",
     "encoding": {
-      "color": {"field": "Average_Employed", "type": "quantitative"},
+      "color": {"field": "Average_Employed", "type": "quantitative", "title": "Percentage of People Employed"},
       "tooltip": [
         {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
-        {"field": "Average_Employed", "type": "quantitative"}
+        {"field": "Average_Employed", "type": "quantitative", "title": "Percentage of People Employed"}
       ]
     }
   }
