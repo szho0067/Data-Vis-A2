@@ -6,10 +6,6 @@
   "transform": [
     {
       "filter": "datum.Years == select_year"
-    },
-    {
-      "calculate": "parseFloat(datum['Median Weekly Earnings'])",
-      "as": "Median Weekly Earnings"
     }
   ],
   "params": [
