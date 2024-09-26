@@ -27,7 +27,7 @@
       ]
     },
     "transform": [
-      {"filter": {"selection": "yearSelector"}}
+      {"filter": "datum.year == yearSelector"}
     ],
     "selection": {
       "yearSelector": {
