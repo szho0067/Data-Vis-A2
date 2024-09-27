@@ -3,6 +3,33 @@
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
   },
+  "params": [
+    {
+      "name": "startYear",
+      "value": 2004,
+      "bind": {
+        "input": "range",
+        "min": 2004,
+        "max": 2024,
+        "step": 1
+      }
+    },
+    {
+      "name": "endYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2004,
+        "max": 2024,
+        "step": 1
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "(year(datum.Date) >= startYear) && (year(datum.Date) <= endYear)"
+    }
+  ],
   "mark": "line",
   "encoding": {
     "x": {
