@@ -1,31 +1,49 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
-    "data": { "url": "data/population.json"},
-    "transform": [
-      {"filter": "datum.year == 2000"},
-      {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"}
-    ],
-    "mark": "bar",
-    "encoding": {
-      "column": {
-        "field": "age", "type": "ordinal"
-      },
-      "y": {
-        "aggregate": "sum", "field": "people", "type": "quantitative",
-        "axis": {"title": "population", "grid": false}
-      },
-      "x": {
-        "field": "gender", "type": "nominal",
-        "scale": {"rangeStep": 12},
-        "axis": {"title": ""}
-      },
-      "color": {
-        "field": "gender", "type": "nominal",
-        "scale": {"range": ["#EA98D2", "#659CCA"]}
-      }
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "title": "My chart",
+    "width": 200,
+    "data": {
+      "values": [
+        {"name": "BTH", "value1": 28, "value2": 24, "legendTitle": "value1"},
+        {"name": "ETH", "value1": 55, "value2": 25, "legendTitle": "value2"}
+      ]
     },
-    "config": {
-      "view": {"stroke": "transparent"},
-      "axis": {"domainWidth": 1}
-    }
+    "encoding": {
+      "x": {"field": "name", "type": "nominal", "axis": {"labelAngle": 0}}
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar", "xOffset": -20, "size": 30, "color": "skyblue"},
+        "encoding": {
+          "y": {
+            "field": "value1",
+            "type": "quantitative"
+        
+          }
+        }
+      },
+      {
+        "mark": {"type": "bar", "size": 30, "xOffset": 18, "color": "orange"},
+        "encoding": {
+          "y": {
+            "field": "value2",
+            "type": "quantitative"
+            
+          }
+        }
+      },
+      {
+        "mark": {"type": "text"},
+        "encoding": {
+          "fill": {
+            "field": "legendTitle",
+            "scale": {"range": ["skyBlue", "orange"]},
+            "legend": {"title": null, "symbolType": "square", "orient": "bottom"}
+          }
+        }
+      }
+    ]
   }
+
+  
