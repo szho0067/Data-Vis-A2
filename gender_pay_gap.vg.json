@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Median Income by Gender Across States",
+    "width": 600,
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Gender%20Pay%20Gap.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "filter": "datum.Category === 'Full-time'"
+      },
+      {
+        "fold": ["Median Male", "Median Female"],
+        "as": ["Gender", "Median"]
+      }
+    ],
+    "layer": [
+      {
+        "mark": {"type": "bar", "xOffset": -10, "size": 20},
+        "encoding": {
+          "x": {
+            "field": "State and territory",
+            "type": "nominal",
+            "axis": {"labelAngle": -45},
+            "title": "State"
+          },
+          "y": {
+            "field": "Median",
+            "type": "quantitative",
+            "axis": {"title": "Median Income"}
+          },
+          "color": {
+            "field": "Gender",
+            "type": "nominal",
+            "scale": {"domain": ["Median Male", "Median Female"], "range": ["skyblue", "orange"]},
+            "title": "Gender"
+          }
+        }
+      }
+    ],
+    "encoding": {
+      "color": {
+        "field": "Gender",
+        "type": "nominal",
+        "scale": {"domain": ["Median Male", "Median Female"], "range": ["skyblue", "orange"]},
+        "legend": {"title": "Gender", "orient": "bottom", "symbolType": "square"}
+      }
+    }
+  }
+  
