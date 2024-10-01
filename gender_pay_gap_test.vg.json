@@ -1,49 +1,88 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A simple bar chart with embedded data.",
-    "title": "My chart",
-    "width": 200,
+    "description": "A side-by-side bar chart showing median income by gender across states, with industry filter.",
+    "title": "Median Income by Gender Across States",
+    "width": 600,
     "data": {
-      "values": [
-        {"name": "BTH", "value1": 28, "value2": 24, "legendTitle": "value1"},
-        {"name": "ETH", "value1": 55, "value2": 25, "legendTitle": "value2"}
-      ]
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Gender%20Pay%20Gap.csv",
+      "format": {"type": "csv"}
     },
-    "encoding": {
-      "x": {"field": "name", "type": "nominal", "axis": {"labelAngle": 0}}
-    },
+    "params": [
+      {
+        "name": "selectedIndustry",
+        "value": "All",
+        "bind": {
+          "input": "select",
+          "options": [
+            "All",
+            "Agriculture, forestry and fishing",
+            "Mining",
+            "Manufacturing",
+            "Electricity, gas, water and waste services",
+            "Construction",
+            "Wholesale trade",
+            "Retail trade",
+            "Accommodation and food services",
+            "Transport, postal and warehousing",
+            "Information Media and telecommunications",
+            "Financial and insurance services",
+            "Rental, hiring and real estate services",
+            "Professional, scientific and technical services",
+            "Administrative and support services",
+            "Public administration and safety",
+            "Education and training",
+            "Health care and social assistance",
+            "Arts and recreation services",
+            "Other services"
+          ],
+          "name": "Select Industry:"
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "selectedIndustry === 'All' || datum.Industry === selectedIndustry"
+      }
+    ],
     "layer": [
       {
-        "mark": {"type": "bar", "xOffset": -20, "size": 30, "color": "skyblue"},
+        "mark": {"type": "bar", "xOffset": -10, "size": 20, "color": "skyblue"},
         "encoding": {
+          "x": {
+            "field": "State and territory",
+            "type": "nominal",
+            "axis": {"labelAngle": -45},
+            "title": "State"
+          },
           "y": {
-            "field": "value1",
-            "type": "quantitative"
-        
+            "field": "Median Male",
+            "type": "quantitative",
+            "axis": {"title": "Median Income"}
           }
         }
       },
       {
-        "mark": {"type": "bar", "size": 30, "xOffset": 18, "color": "orange"},
+        "mark": {"type": "bar", "xOffset": 10, "size": 20, "color": "orange"},
         "encoding": {
+          "x": {
+            "field": "State and territory",
+            "type": "nominal"
+          },
           "y": {
-            "field": "value2",
+            "field": "Median Female",
             "type": "quantitative"
-            
-          }
-        }
-      },
-      {
-        "mark": {"type": "text"},
-        "encoding": {
-          "fill": {
-            "field": "legendTitle",
-            "scale": {"range": ["skyBlue", "orange"]},
-            "legend": {"title": null, "symbolType": "square", "orient": "bottom"}
           }
         }
       }
-    ]
+    ],
+    "encoding": {
+      "color": {
+        "legend": {
+          "title": "Gender",
+          "orient": "bottom",
+          "symbolType": "square"
+        }
+      }
+    }
   }
-
   
