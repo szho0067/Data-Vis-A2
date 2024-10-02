@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "Asdasdasdasdasdasd"
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
     },
     "params": [
       {
@@ -43,9 +43,9 @@
         "title": "Average Employed"
       },
       "color": {
-        "field": "Industry",
+        "field": "Category",
         "type": "nominal",
-        "title": "Industry"
+        "title": "Category"
       }
     }
   }
