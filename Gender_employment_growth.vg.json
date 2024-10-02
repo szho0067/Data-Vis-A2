@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "Asdasdasdasdasdasd"
+    },
+    "params": [
+      {
+        "name": "startYear",
+        "value": 2004,
+        "bind": {
+          "input": "range",
+          "min": 2004,
+          "max": 2024,
+          "step": 1
+        }
+      },
+      {
+        "name": "endYear",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 2004,
+          "max": 2024,
+          "step": 1
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "(year(datum.Date) >= startYear) && (year(datum.Date) <= endYear)"
+      }
+    ],
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": "Year"
+      },
+      "y": {
+        "field": "Average_Employed",
+        "type": "quantitative",
+        "title": "Average Employed"
+      },
+      "color": {
+        "field": "Industry",
+        "type": "nominal",
+        "title": "Industry"
+      }
+    }
+  }
+  
