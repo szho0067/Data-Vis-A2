@@ -52,7 +52,7 @@
         "tooltip": [
           {"field": "Date", "type": "temporal", "title": "Year"},
           {"field": "Industry", "type": "nominal", "title": "Industry"},
-          {"field": "Average_Employed", "type": "quantitative", "title": "Average Employed"}
+          {"field": "Number of People Employed", "type": "quantitative", "title": "Average Employed"}
         ]
       }
     },
