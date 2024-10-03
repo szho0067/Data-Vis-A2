@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
+    },
+    "transform": [
+      {
+        "filter": {"field": "Gender", "equal": "Male"}
+      }
+    ],
+    "selection": {
+      "year_select": {
+        "type": "single",
+        "fields": ["Year"],
+        "bind": {
+          "input": "select",
+          "options": ["1978", "1979", "1980"], 
+          "name": "Select Year: "
+        }
+      }
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Age_Group",
+        "type": "nominal",
+        "axis": {
+          "title": "Age Group"
+        }
+      },
+      "y": {
+        "aggregate": "sum",
+        "field": "Average_Employed",
+        "type": "quantitative",
+        "axis": {
+          "title": "Average Employed"
+        }
+      },
+      "color": {
+        "field": "Employment_Status",
+        "type": "nominal",
+        "title": "Employment Status"
+      },
+      "opacity": {
+        "condition": {"selection": "year_select", "value": 1},
+        "value": 0.2
+      }
+    }
+  }
+  
