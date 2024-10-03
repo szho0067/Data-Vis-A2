@@ -1,49 +1,42 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/male_aggregated_data.csv"
     },
     "transform": [
       {
-        "filter": {"field": "Gender", "equal": "Male"}
+        "filter": "datum.Average_Employed != null"
       }
     ],
-    "selection": {
-      "year_select": {
-        "type": "single",
-        "fields": ["Year"],
-        "bind": {
-          "input": "select",
-          "options": ["1978", "1979", "1980"], 
-          "name": "Select Year: "
-        }
-      }
-    },
     "mark": "bar",
     "encoding": {
       "x": {
         "field": "Age_Group",
         "type": "nominal",
-        "axis": {
-          "title": "Age Group"
-        }
+        "title": "Age Group"
       },
       "y": {
-        "aggregate": "sum",
         "field": "Average_Employed",
         "type": "quantitative",
-        "axis": {
-          "title": "Average Employed"
-        }
+        "title": "Average Employed"
       },
       "color": {
         "field": "Employment_Status",
         "type": "nominal",
         "title": "Employment Status"
       },
-      "opacity": {
-        "condition": {"selection": "year_select", "value": 1},
-        "value": 0.2
+      "tooltip": [
+        {"field": "Age_Group", "type": "nominal", "title": "Age Group"},
+        {"field": "Employment_Status", "type": "nominal", "title": "Employment Status"},
+        {"field": "Average_Employed", "type": "quantitative", "title": "Average Employed"}
+      ]
+    },
+    "width": 600,
+    "height": 400,
+    "title": "Average Employment Status by Age Group",
+    "config": {
+      "axis": {
+        "labelAngle": 0
       }
     }
   }

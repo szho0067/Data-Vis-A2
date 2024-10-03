@@ -30,22 +30,64 @@
       "filter": "(year(datum.Date) >= startYear) && (year(datum.Date) <= endYear)"
     }
   ],
-  "mark": "line",
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "title": "Year"
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Average_Employed",
+          "type": "quantitative",
+          "title": "Average Employed"
+        },
+        "color": {
+          "field": "Industry",
+          "type": "nominal",
+          "title": "Industry"
+        },
+        "tooltip": [
+          {"field": "Date", "type": "temporal", "title": "Year"},
+          {"field": "Industry", "type": "nominal", "title": "Industry"},
+          {"field": "Average_Employed", "type": "quantitative", "title": "Average Employed"}
+        ]
+      }
     },
-    "y": {
-      "field": "Average_Employed",
-      "type": "quantitative",
-      "title": "Average Employed"
-    },
-    "color": {
-      "field": "Industry",
-      "type": "nominal",
-      "title": "Industry"
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 60,
+        "dy": -90,
+        "fontStyle": "italic",
+        "fontSize": 8
+      },
+      "transform": [
+        {
+          "filter": "datum.Industry === 'Health Care and Social Assistance'"
+        },
+        {
+          "aggregate": [{"op": "argmax", "field": "Average_Employed", "as": "max_point"}],
+          "groupby": ["Industry"]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "max_point.Date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "max_point.Average_Employed",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Health Care and Social Assistance"
+        }
+      }
     }
-  }
+  ]
 }
