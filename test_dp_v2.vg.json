@@ -256,7 +256,8 @@
       "color": {
         "field": "Industry",
         "type": "nominal",
-        "title": "Industry"
+        "title": "Industry",
+        "legend": "right"
       }
     },
     "layer": [
