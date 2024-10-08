@@ -1,0 +1,78 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Males_and_Females_Proportion_Data.csv"
+    },
+    "background": "#e3f1fe",
+    "width": 400,
+    "height": 300,
+    "transform": [
+      {
+        "filter": "datum.Average_Employed != null"
+      },
+      {
+        "filter": "datum.Year == select_year"
+      },
+      {
+        "calculate": "datum.Gender == 'Male' ? datum.Average_Employed : -datum.Average_Employed",
+        "as": "Employed_Butterfly"
+      }
+    ],
+    "params": [
+      {
+        "name": "select_year",
+        "value": 1978,
+        "bind": {
+          "input": "range",
+          "min": 1978,
+          "max": 2023,
+          "step": 1,
+          "name": "Select Year:"
+        }
+      }
+    ],
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "clip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Employed_Butterfly",
+            "type": "quantitative",
+            "title": "Average Employed",
+            "axis": {
+              "labelAngle": 0
+            }
+          },
+          "y": {
+            "field": "Age_Group",
+            "type": "nominal",
+            "title": "Age Group"
+          },
+          "color": {
+            "field": "Employment_Status",
+            "type": "nominal",
+            "title": "Employment Status",
+            "scale": {
+              "scheme": "category10"  
+            }
+          },
+          "tooltip": [
+            {"field": "Age_Group", "type": "nominal", "title": "Age Group"},
+            {"field": "Gender", "type": "nominal", "title": "Gender"},
+            {"field": "Employment_Status", "type": "nominal", "title": "Employment Status"},
+            {"field": "Average_Employed", "type": "quantitative", "title": "Average Employed"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "title": "Male and Female Employment by Age Group Split by Employment Status"
+  }
+  
