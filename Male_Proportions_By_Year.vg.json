@@ -3,6 +3,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/male_aggregated_data.csv"
   },
+  "background": "#91d8ff",
+  "width": 400,
+  "height": 200,
   "transform": [
     {
       "filter": "datum.Average_Employed != null"
@@ -50,8 +53,8 @@
       {"field": "Average_Employed", "type": "quantitative", "title": "Average Employed"}
     ]
   },
-  "width": 600,
-  "height": 400,
+  "width": 400,
+  "height": 200,
   "title": "Average Employment Status by Age Group",
   "config": {
     "axis": {

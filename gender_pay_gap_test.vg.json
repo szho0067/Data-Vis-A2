@@ -2,7 +2,9 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A side-by-side bar chart showing median income by gender across states, with industry filter.",
     "title": "Median Income by Gender Across States",
-    "width": 600,
+    "width": 400,
+    "height": 200,
+    "background": "#91d8ff", 
     "data": {
       "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Gender%20Pay%20Gap.csv",
       "format": {"type": "csv"}

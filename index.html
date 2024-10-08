@@ -46,16 +46,23 @@
     /* Center map container */
     .map-container {
       display: flex;
-      justify-content: center;
+      flex-direction: column; /* Aligns title and map vertically */
+      align-items: center; /* Centers content */
       margin: 20px 0; /* Space around the map */
-      background-color: transparent;
+      background-color: #91d8ff;
+    }
+
+    /* Center the h3 title */
+    .centered-title {
+      text-align: center; /* Center the text */
+      margin-bottom: 10px; /* Space between title and graph */
     }
 
     /* Ensure map is right below the subheading and centered */
     .vis-container {
       width: 90%; /* Adjust the width as needed */
       max-width: 600px; /* Max width for better visual control */
-      background-color: transparent;
+      background-color: #91d8ff;
     }
 
     /* Center the description in the middle of the page */
@@ -103,11 +110,14 @@
       <div class="pure-u-1-1 heading-band">
         <h2>Employment by State</h2>
       </div>
-      <div class="pure-u-1-1">
-        <div class="map-container">
-          <div id="map1" class="vis-container"></div>
-        </div>
-      </div>
+      <div>
+
+    </div>
+    <div class="pure-u-1-1">
+    <div class="map-container">
+        <div id="map1" class="vis-container"></div>
+    </div>
+    </div>
     </div>
 
     <!-- Description section centered both horizontally and vertically -->
@@ -126,6 +136,8 @@
       </div>
       <div class="pure-u-1-1">
         <div class="map-container">
+          <!-- Centered title -->
+          <h3 class="centered-title">Median Earnings by Industry</h3>
           <div id="map4" class="vis-container"></div>
         </div>
       </div>
@@ -139,17 +151,51 @@
       
       <!-- Maps 2 and 3 side by side -->
       <div class="pure-u-1-2">
+        <h3 class="centered-title">Employment within Each Industry</h3>
         <div id="map2" class="vis-container"></div>
         <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
       <div class="pure-u-1-2">
+        <h3 class="centered-title">Employment growth amongst Each Gender</h3>
         <div id="map3" class="vis-container"></div>
         <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
+
+    <!-- Male and Female Employment Section -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 heading-band">
+        <h2>Male and Female Employment in Australia</h2>
+      </div>
+
+      <div class="pure-u-1-2">
+        <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
+        <div id="map5" class="vis-container"></div>
+        <h3 class="centered-title">Proportions of Male Employment by Age Group</h3>
+        <div id="map6" class="vis-container"></div>
+      </div>
+
+    <!-- Map 6 and Map 7 side by side -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <p>Insert text description here. 
+        
+        </p>
+
+        <p>
+
+
+
+
+        </p>
+
+        <h3 class="centered-title">Median Income by Gender</h3>
+        <div id="map7" class="vis-container"></div>
+        
+      </div>
 
   </div>
 
