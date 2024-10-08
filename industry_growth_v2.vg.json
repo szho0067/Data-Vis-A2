@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
+      },
+      "width": 400,
+      "height": 400,
+      "background": "#91d8ff",
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}},
+          "title": "Year"
+        },
+        "y": {
+          "field": "Average_Employed",
+          "type": "quantitative",
+          "title": "Number of Employed People"
+        },
+        "color": {
+          "field": "Industry",
+          "type": "nominal",
+          "title": "Industry"
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "title": "Year"
+          },
+          {
+            "field": "Industry",
+            "type": "nominal",
+            "title": "Industry"
+          },
+          {
+            "field": "Average_Employed",
+            "type": "quantitative",
+            "title": "Number of People Employed"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
+      },
+      "width": 400,
+      "height": 100,
+      "background": "#91d8ff",
+      "mark": "line",
+      "params": [{"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}],
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Average_Employed",
+          "type": "quantitative",
+          "title": "Number of Employed People"
+        },
+        "color": {
+          "field": "Industry",
+          "type": "nominal",
+          "title": "Industry"
+        }
+      }
+    }
+  ]
+}

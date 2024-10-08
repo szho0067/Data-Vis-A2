@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "vconcat": [
+    {
+      "width": 400,
+      "height": 400,
+      "background": "#91d8ff",
+      "data": {
+        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
+      },
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}},
+          "title": "Year"
+        },
+        "y": {
+          "field": "Average_Employed",
+          "type": "quantitative",
+          "title": "Average Employed"
+        },
+        "color": {
+          "field": "Category",
+          "type": "nominal",
+          "title": "Category"
+        }
+      }
+    },
+    {
+      "width": 400,
+      "height": 100,
+      "background": "#91d8ff",
+      "data": {
+        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
+      },
+      "mark": "line",
+      "params":[{"name": "brush", "select": {"type": "interval", "encodings":["x"]}}],
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Average_Employed",
+          "type": "quantitative",
+          "title": "Average Employed"
+        },
+        "color": {
+          "field": "Category",
+          "type": "nominal",
+          "title": "Category"
+        }
+      }
+    }
+  ]
+}

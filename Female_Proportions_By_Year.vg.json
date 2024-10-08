@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/female_aggregated_data.csv"
   },
-  "background": "#91d8ff",
+  "background": "#e3f1fe",
   "transform": [
     {
       "filter": "datum.Average_Employed != null"
