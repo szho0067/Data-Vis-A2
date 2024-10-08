@@ -1,0 +1,91 @@
+{
+    "data": {
+      "name": "industry_pay_data",
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay%20V2.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.Years == select_year"
+      }
+    ],
+    "params": [
+      {
+        "name": "select_year",
+        "value": 2014,
+        "bind": {
+          "input": "range",
+          "min": 2014,
+          "max": 2023,
+          "step": 1,
+          "name": "Select Year:"
+        }
+      }],
+
+    "height": 400,
+    "width": 450,
+    "encoding": {
+      "x": {
+        "field": "Median Weekly Earnings",
+        "type": "quantitative",
+        "title": "Median Weekly Earnings ($)",
+        "scale": {
+          "domain": [1, 2800]
+        }
+      },
+      "y": {
+        "field": "State and territory",
+        "type": "nominal"
+      },
+      "color": {
+        "field": "Industry",
+        "type": "nominal",
+        "title": "Industry",
+        "legend": "right"
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {
+            "field": "State and territory",
+            "type": "nominal"
+          },
+          "color": {
+            "value": "#BBBBBB"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "opacity": 0.6
+        },
+        "encoding": {
+          "tooltip": [
+            {
+              "field": "Industry",
+              "type": "nominal",
+              "title": "Industry"
+            },
+            {
+              "field": "Median Weekly Earnings",
+              "type": "quantitative",
+              "title": "Median Weekly Earnings ($)"
+            },
+            {
+              "field": "Years",
+              "type": "quantitative",
+              "title": "Year"
+            }
+          ],
+          "color": {
+            "field": "Industry",
+            "type": "nominal"
+          }
+        }
+      }
+    ]
+  }
+  

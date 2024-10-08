@@ -23,10 +23,24 @@
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
 
   <style>
+    body {
+      background-color: #91d8ff; /* Blue background */
+      color: white; /* White text for better contrast */
+      margin: 0; /* Remove any default margin */
+      padding: 0; /* Remove any default padding */
+    }
+
     /* Center headers */
-    h1, h2 {
+    .heading-band {
+      background-color: #021591; /* Light gray background for band */
+      padding: 10px;
+      margin: 0; /* Remove default margins */
       text-align: center;
-      margin: 20px 0;
+    }
+
+    h1, h2 {
+      margin: 0; /* Remove any default margin on h1 and h2 */
+      padding: 10px 0; /* Add padding inside the heading */
     }
 
     /* Center map container */
@@ -34,12 +48,14 @@
       display: flex;
       justify-content: center;
       margin: 20px 0; /* Space around the map */
+      background-color: transparent;
     }
 
     /* Ensure map is right below the subheading and centered */
     .vis-container {
       width: 90%; /* Adjust the width as needed */
       max-width: 600px; /* Max width for better visual control */
+      background-color: transparent;
     }
 
     /* Center the description in the middle of the page */
@@ -77,15 +93,17 @@
 
     <!-- Header section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-1 heading-band">
         <h1>Australia Employment</h1>
       </div>
     </div>
 
     <!-- Subheading and map section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-1 heading-band">
         <h2>Employment by State</h2>
+      </div>
+      <div class="pure-u-1-1">
         <div class="map-container">
           <div id="map1" class="vis-container"></div>
         </div>
@@ -101,9 +119,12 @@
       </div>
     </div>
 
-    <div class="pure-g"></div>
-      <div class="pure-u-1-1">
+    <!-- Median Earnings by Industry Section -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 heading-band">
         <h2>Median Earnings by Industry</h2>
+      </div>
+      <div class="pure-u-1-1">
         <div class="map-container">
           <div id="map4" class="vis-container"></div>
         </div>
@@ -112,7 +133,7 @@
 
     <!-- Australia's Employment Growth Section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-1 heading-band">
         <h2>Australia's Employment Growth</h2>
       </div>
       
