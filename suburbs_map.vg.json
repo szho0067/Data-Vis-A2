@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Percentage of Employed People within the State",
+    "width": 400,
+    "height": 400,
+    "background": "#e3f1fe",
+    "data": {
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Employment_Region.csv"
+    },
+    "transform": [
+      {
+        "lookup": "State",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/js/map.json",
+            "format": {
+              "type": "topojson",
+              "feature": "STE_2021_AUST_GDA2020"
+            }
+          },
+          "key": "q",
+          "fields": ["properties", "type", "geometry"]
+        }
+      }
+    ],
+    "projection": {
+      "type": "naturalEarth1"
+    },
+    "mark": "geoshape",
+    "encoding": {
+      "color": {
+        "field": "Average_Employed",
+        "type": "quantitative",
+        "title": "Percentage of People Employed"
+      },
+      "tooltip": [
+        {
+          "field": "q",
+          "type": "nominal",
+          "title": "State"
+        },
+        {
+          "field": "Average_Employed",
+          "type": "quantitative",
+          "title": "Percentage of People Employed"
+        }
+      ]
+    }
+  }
+  

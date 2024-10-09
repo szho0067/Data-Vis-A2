@@ -1,45 +1,36 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 300,
-    "height": 300,
-    "data": {
-      "url": "https://raw.githubusercontent.com//jamesjeffery77/jamesjeffery77.github.io/main/share-electricity-low-carbon_fullDataset.csv"
-    },
-    "transform": [
-      {
-        "lookup": "country",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/leakyMirror/map-of-europe/master/TopoJSON/europe.topojson",
-            "format": {"type": "topojson", "feature": "europe"}
-          },
-          "key": "properties.NAME",
-          "fields": ["properties", "type", "geometry"]
-        }
-      },
-      {"filter": "datum.year==year"}
-    ],
-    "params": [
-      {
-        "name": "year",
-        "value": 2019,
-        "bind": {
-          "input": "range",
-          "min": 2019,
-          "max": 2030,
-          "step": 1,
-          "name": "Select the year:"
-        }
-      }
-    ],
-    "projection": {"type": "naturalEarth1"},
-    "mark": "geoshape",
-    "encoding": {
-      "color": {"field": "percentage", "type": "quantitative"},
-      "tooltip": [
-        {"field": "properties.NAME", "type": "nominal", "title": "country"},
-        {"field": "percentage", "type": "quantitative"}
-      ]
-    }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "COVID-19 Active Cases (10 Oct 2020)",
+  "width": 800,
+  "height": 400,
+  "projection": {"type": "equalEarth"},
+  "data": {
+  "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+  "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "transform": [
+  {
+  "lookup": "properties.NAME",
+  "from": {
+  "data": {
+  "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+  },
+  "key": "Suburb Name or Postcode",
+  "fields": ["Active"]
+  }},
+  {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+  ],
+  "mark": {"type": "geoshape"},
+  "encoding": {
+  "color": {
+  "field": "Active Cases",
+  "type": "quantitative",
+  "scale": {"type": "log"}
+  },
+  "tooltip": [
+  {"field": "properties.NAME", "type": "nominal", "title":
+  "Country"},
+  {"field": "Active", "type": "quantitative"}
+  ]
   }
-  
+  }
