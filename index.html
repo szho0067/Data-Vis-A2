@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Multiple Visualisations | An Example</title>
+  <title>Australia Employment</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -69,7 +69,7 @@
     .vis-container {
       width: 90%; /* Adjust the width as needed */
       max-width: 600px; /* Max width for better visual control */
-      background-color: #e3f1fe; /* Same background color */
+      background-color: aliceblue; /* Same background color */
     }
 
     /* Center the description in the middle of the page */
@@ -154,11 +154,19 @@
           <div class="map-container">
             <div id="map8" class="vis-container"></div>
           </div>
-         </div> 
+        </div>
       </div>
-
     </div>
 
+    <div class="hello-container">
+      <div class="section-box">
+        <p>Hello</p>
+      </div>
+
+      <div class="section-box">
+        <p>Hello</p>
+      </div>
+    </div>
 
     <!-- Median Earnings by Industry Section -->
     <div class="pure-g">
@@ -210,30 +218,52 @@
     </div>
 
     <!-- Male and Female Employment Section -->
-    <div class="pure-g section-box">
+    <div class="pure-g">
       <div class="pure-u-1-1 heading-band">
         <h2>Male and Female Employment in Australia</h2>
       </div>
 
       <div class="pure-u-1-2">
-        <div class="map-container">
-          <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
-          <div id="map5" class="vis-container"></div>
-          <h3 class="centered-title">Proportions of Male Employment by Age Group</h3>
-          <div id="map6" class="vis-container"></div>
-        </div>
-      </div>
-
-      <!-- Map 6 and Map 7 side by side -->
-      <div class="pure-g section-box">
-        <div class="pure-u-1-2">
-          <p>Insert text description here.</p>
+        <div class = "section-box">
           <div class="map-container">
-            <h3 class="centered-title">Median Income by Gender</h3>
-            <div id="map7" class="vis-container"></div>
+            <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
+            <div id="map5" class="vis-container"></div>
           </div>
         </div>
       </div>
+      
+      <div class="pure-u-1-2">
+        <div class = "section-box">
+            <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
+            <p> Text </p>
+          </div>
+        </div>
+      </div> 
+
+  
+      <!-- Map 6 and Map 7 side by side -->
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class = "section-box">
+            <div class="map-container">
+              <h3 class="centered-title">Proportions of Male Employment by Age Group</h3>
+              <div id="map6" class="vis-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pure-u-1-2">
+          <div class = "section-box">
+            <div class="map-container">
+              <h3 class="centered-title">Median Income by Gender</h3>
+              <div id="map7" class="vis-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+
     </div>
 
   </div>
