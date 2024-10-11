@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#F0F8FF",
   "vconcat": [
     {
-      "width": 400,
+      "width": 250,
       "height": 400,
-      "background": "#91d8ff",
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
       },
@@ -31,7 +31,7 @@
     {
       "width": 400,
       "height": 100,
-      "background": "#91d8ff",
+   
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
       },

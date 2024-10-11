@@ -3,7 +3,10 @@
       "name": "industry_pay_data",
       "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay%20V2.csv"
     },
-    "background": "#91d8ff",
+    "background": "#F0F8FF",
+    "width": 1700,
+    "height": 200,
+
     "transform": [
       {
         "filter": "datum.Years == select_year"
@@ -22,8 +25,6 @@
         }
       }],
 
-    "height": 400,
-    "width": 450,
     "encoding": {
       "x": {
         "field": "Median Weekly Earnings",

@@ -1,15 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Percentage of Employed People within the State",
-  "width": 400,
-  "height": 400,
+  "title": "Number of Jobs per Square Kilometer within the State",
+  "width": 600,
+  "height": 600,
   "background": "#e3f1fe",
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/SA2_data.csv"
   },
   "transform": [
     {
-      "lookup": "State",
+      "lookup": "SA2",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/js/SA2_map.json",
@@ -18,13 +18,17 @@
             "feature": "SA2_2021_AUST_GDA2020"
           }
         },
-        "key": "SA2_NAME21",
-        "fields": ["properties", "geometry"]
+        "key": "properties.SA2_CODE21",
+        "fields": ["properties", "type", "geometry", "properties.AREASQKM21"]
       }
+    },
+    {
+      "calculate": "(datum['Number of Jobs'] * 1000) / datum['properties.AREASQKM21']",
+      "as": "Jobs_per_SQKM"
     }
   ],
   "projection": {
-    "type": "naturalEarth1"
+    "type": "equirectangular"
   },
   "mark": {
     "type": "geoshape",
@@ -33,20 +37,34 @@
   },
   "encoding": {
     "color": {
-      "field": "Number of Jobs (''000)",
+      "field": "Jobs_per_SQKM",
       "type": "quantitative",
-      "title": "Number of Jobs (''000)"
+      "title": "Jobs per Square Kilometer",
+      "scale": {
+        "domain": [0, 5],  
+        "scheme": "reds" 
+      }
     },
     "tooltip": [
       {
-        "field": "State",
+        "field": "SA2 NAME",
         "type": "nominal",
-        "title": "State"
+        "title": "Area Name"
       },
       {
-        "field": "Number of Jobs (''000)",
+        "field": "Number of Jobs",
         "type": "quantitative",
-        "title": "Number of Jobs (''000)"
+        "title": "Number of Jobs ('000)"
+      },
+      {
+        "field": "properties.AREASQKM21",
+        "type": "quantitative",
+        "title": "Area (sq km)"
+      },
+      {
+        "field": "Jobs_per_SQKM",
+        "type": "quantitative",
+        "title": "Jobs per Square Kilometer"
       }
     ]
   }

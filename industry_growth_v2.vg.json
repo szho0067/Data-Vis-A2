@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#F0F8FF",
   "vconcat": [
     {
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
       },
-      "width": 400,
+      "width": 300,
       "height": 400,
-      "background": "#91d8ff",
       "mark": "line",
       "encoding": {
         "x": {
@@ -49,9 +49,8 @@
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
       },
-      "width": 400,
+      "width": 300,
       "height": 100,
-      "background": "#91d8ff",
       "mark": "line",
       "params": [{"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}],
       "encoding": {
