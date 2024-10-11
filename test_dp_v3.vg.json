@@ -1,10 +1,10 @@
 {
     "data": {
       "name": "industry_pay_data",
-      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry%20Pay%20V2.csv"
+      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry_Pay_V3.csv"
     },
     "background": "#F0F8FF",
-    "width": 1700,
+    "width": 1000,
     "height": 200,
 
     "transform": [
