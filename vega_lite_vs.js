@@ -26,6 +26,7 @@ var vg_7 = "Gender_pay_gap_test.vg.json";
 vegaEmbed("#map7", vg_7), {actions: false}.then(function(result) {
 }).catch(console.error);
 
-var vg_8 = "suburbs_map.vg.json";
-vegaEmbed("#map8", vg_8).then(function(result) {
-}).catch(console.error);
+var vg_8 = "Butterfly_chart";
+vegaEmbed("#map8", vg_8), {actions: false}.then(function(result) {
+}).catch(console.error)
+

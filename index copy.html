@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Multiple Visualisations | An Example</title>
+  <title>Australia Employment</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -22,6 +22,100 @@
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
 
+  <style>
+    body {
+      background-color: #e3f1fe; /* Light blue background */
+      color: black; /* Black text for better contrast */
+      margin: 0; /* Remove any default margin */
+      padding: 0; /* Remove any default padding */
+    }
+
+    /* Center headers */
+    .heading-band {
+      background-color: #021591; /* Light gray background for band */
+      padding: 10px;
+      margin: 0; /* Remove default margins */
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin: 0; /* Remove any default margin on h1 and h2 */
+      padding: 10px 0; /* Add padding inside the heading */
+    }
+
+    /* Center map container */
+    .map-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100%; /* Make the container take full height */
+    }
+
+    .single-container {
+      display: flex;
+      justify-content: flex-start; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100%; /* Make the container take full height */
+    
+    }
+
+    .pure-u-1-2 {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+    }
+    
+
+    .vis-container {
+      width: 90%; /* Adjust the width as needed */
+      max-width: 600px; /* Max width for better visual control */
+      background-color: aliceblue; /* Same background color */
+    }
+
+    /* Center the description in the middle of the page */
+    .description-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px; /* Adjust height as needed */
+    }
+
+    .description {
+      text-align: center; /* Center text inside the container */
+    }
+
+    /* Center Australia's Employment Growth section */
+    .growth-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+    }
+
+    .growth-content {
+      text-align: center;
+      max-width: 800px; /* Control the width of the content */
+      margin: 20px;
+    }
+
+    /* Add border around each section */
+    .section-box {
+      border: 2px solid #021591; /* Add a blue border */
+      padding: 10px; /* Space inside the border */
+      margin: 10px; /* Space outside the border */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: aliceblue;
+      width: 95%
+    }
+
+    /* Flex container for Hello boxes */
+    .hello-container {
+      display: flex;
+      justify-content: space-around; /* Space the items evenly */
+      align-items: center;
+    }
+  </style>
 
 </head>
 
@@ -29,85 +123,45 @@
 
   <div class="page">
 
-    <!-- pure grid group -->
+    <!-- Header section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
-        <h1>Australian Employment</h1>
+      <div class="pure-u-1-1 heading-band">
+        <h1>Australia Employment</h1>
       </div>
     </div>
-    <!-- end pure grid group -->
 
-    <!-- pure grid group -->
+    <div class="section-box" style="text-align: center;">
+      <p>Australia Employment text.balsdajskdajksdhjkashdjkashdkjashd</p>
+    </div>
+
+    <!-- Subheading and map section -->
     <div class="pure-g">
+      <div class="pure-u-1-1 heading-band">
+        <h2>Employment within areas of Australia</h2>
+      </div>
+      
+      <!-- Maps 1 and 8 side by side -->
       <div class="pure-u-1-2">
-        <div class="description description-bottom">
-          <h2>Employment by State</h2>
-        </div>
+        <div class = "section-box">
+          <div class="map-container">
+            <div id="map9" class="vis-container"></div>
+          </div>
+         </div> 
       </div>
+
       <div class="pure-u-1-2">
-        <div id="map1" class="vis-container"></div>
-      </div>
-    </div>
-    <!-- end pure grid group -->
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-3">
-        <div class="description description-left">
-          <h2>Three Equal Columns</h2>
-          <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-            sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
+        <div class = "section-box">
+          <div class="map-container">
+            <div id="map1" class="vis-container"></div>
+          </div>
         </div>
       </div>
-      <div class="pure-u-1-3">
-        <div id="map2" class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3" style="width: 31.5%;">
-        <div id="map2" class="vis-container" style="margin-left: 15px;"></div>
-      </div>
-
     </div>
-    <!-- end pure grid group -->
+  </div>
 
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-2-3">
-        <div id="vis2" class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3">
-        <div class="description description-right">
-          <h2>First and Second Columns Combined</h2>
-          <p>The first and second columns are combined. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
-            faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
-        </div>
-      </div>
+</div>
 
-    </div>
-
-
-
-  </div> <!-- end page -->
-
-  <script type="text/javascript">
-    var specVis1 = "./normalised-stacked-bars-responsive.json";
-    var specVis2 = "./line-chart-responsive.json";
-
-    vegaEmbed('#map1', specVis1, { "actions": false });
-
-    vegaEmbed('#map2', specVis2, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    vegaEmbed('#map3', specVis1, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-
-    vegaEmbed('#map4', specVis2, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-    }).catch(console.error);
-  </script>
 </body>
 
 </html>
+

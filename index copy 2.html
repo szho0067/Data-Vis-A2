@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Multiple Visualisations | An Example</title>
+  <title>Australia Employment</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -23,23 +23,53 @@
   <link rel="stylesheet" type="text/css" href="styles.css" media="all">
 
   <style>
+    body {
+      background-color: #e3f1fe; /* Light blue background */
+      color: black; /* Black text for better contrast */
+      margin: 0; /* Remove any default margin */
+      padding: 0; /* Remove any default padding */
+    }
+
     /* Center headers */
-    h1, h2 {
+    .heading-band {
+      background-color: #021591; /* Light gray background for band */
+      padding: 10px;
+      margin: 0; /* Remove default margins */
       text-align: center;
-      margin: 20px 0;
+    }
+
+    h1, h2 {
+      margin: 0; /* Remove any default margin on h1 and h2 */
+      padding: 10px 0; /* Add padding inside the heading */
     }
 
     /* Center map container */
     .map-container {
       display: flex;
-      justify-content: center;
-      margin: 20px 0; /* Space around the map */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100%; /* Make the container take full height */
     }
 
-    /* Ensure map is right below the subheading and centered */
+    .single-container {
+      display: flex;
+      justify-content: flex-start; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100%; /* Make the container take full height */
+    
+    }
+
+    .pure-u-1-2 {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+    }
+    
+
     .vis-container {
       width: 90%; /* Adjust the width as needed */
       max-width: 600px; /* Max width for better visual control */
+      background-color: aliceblue; /* Same background color */
     }
 
     /* Center the description in the middle of the page */
@@ -67,6 +97,24 @@
       max-width: 800px; /* Control the width of the content */
       margin: 20px;
     }
+
+    /* Add border around each section */
+    .section-box {
+      border: 2px solid #021591; /* Add a blue border */
+      padding: 10px; /* Space inside the border */
+      margin: 10px; /* Space outside the border */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: aliceblue;
+      width: 95%
+    }
+
+    /* Flex container for Hello boxes */
+    .hello-container {
+      display: flex;
+      justify-content: space-around; /* Space the items evenly */
+      align-items: center;
+    }
   </style>
 
 </head>
@@ -77,57 +125,145 @@
 
     <!-- Header section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-1 heading-band">
         <h1>Australia Employment</h1>
       </div>
     </div>
 
+    <div class="section-box" style="text-align: center;">
+      <p>Australia Employment text.balsdajskdajksdhjkashdjkashdkjashd</p>
+    </div>
+
     <!-- Subheading and map section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
-        <h2>Employment by State</h2>
-        <div class="map-container">
-          <div id="map1" class="vis-container"></div>
+      <div class="pure-u-1-1 heading-band">
+        <h2>Employment within areas of Australia</h2>
+      </div>
+      
+      <!-- Maps 1 and 8 side by side -->
+      <div class="pure-u-1-2">
+        <div class = "section-box">
+          <div class="map-container">
+            <div id="map1" class="vis-container"></div>
+          </div>
+         </div> 
+      </div>
+
+      <div class="pure-u-1-2">
+        <div class = "section-box">
+          <div class="map-container">
+            <div id="map9" class="vis-container"></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Description section centered both horizontally and vertically -->
+    <div class="hello-container">
+      <div class="section-box">
+        <p>Hello</p>
+      </div>
+
+      <div class="section-box">
+        <p>Hello</p>
+      </div>
+    </div>
+
+    <!-- Median Earnings by Industry Section -->
     <div class="pure-g">
-      <div class="pure-u-1-1 description-container">
-        <div class="description">
-          <p>Insert text description here.</p>
-        </div>
+      <div class="pure-u-1-1 heading-band">
+        <h2>Median Earnings by Industry</h2>
+      </div>
+
+      <div class="pure-u-1-1">
+        <div class = "section-box">
+          <div class="single-container">
+            <!-- Centered title -->
+            <div id="map4" class="vis-container"></div>
+          </div>
+        </div>  
       </div>
     </div>
 
-    <div class="pure-g"></div>
-      <div class="pure-u-1-1">
-        <h2>Median Earnings by Industry</h2>
-        <div class="map-container">
-          <div id="map4" class="vis-container"></div>
-        </div>
+    <div class = "pure-g">
+      <div class = "pure-u-1-1">
+        <div class ="section-box">
+            <p> Text description</p>
+        </div>  
       </div>
+
     </div>
 
     <!-- Australia's Employment Growth Section -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-1 heading-band">
         <h2>Australia's Employment Growth</h2>
       </div>
       
       <!-- Maps 2 and 3 side by side -->
       <div class="pure-u-1-2">
-        <div id="map2" class="vis-container"></div>
-        <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class = "section-box">
+          <div class="map-container">
+            <div id="map2" class="vis-container"></div>
+          </div>
+        </div>
       </div>
 
       <div class="pure-u-1-2">
-        <div id="map3" class="vis-container"></div>
-        <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class = "section-box">
+          <div class="map-container">
+            <div id="map3" class="vis-container"></div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Male and Female Employment Section -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 heading-band">
+        <h2>Male and Female Employment in Australia</h2>
+      </div>
+
+      <div class="pure-u-1-2">
+        <div class = "section-box">
+          <div class="map-container">
+            <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
+            <div id="map5" class="vis-container"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pure-u-1-2">
+        <div class = "section-box">
+            <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
+            <p> Text </p>
+          </div>
+        </div>
+      </div> 
+
+  
+      <!-- Map 6 and Map 7 side by side -->
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class = "section-box">
+            <div class="map-container">
+              <h3 class="centered-title">Proportions of Male Employment by Age Group</h3>
+              <div id="map6" class="vis-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pure-u-1-2">
+          <div class = "section-box">
+            <div class="map-container">
+              <h3 class="centered-title">Median Income by Gender</h3>
+              <div id="map7" class="vis-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+
     </div>
 
   </div>
