@@ -4,10 +4,10 @@
   "vconcat": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
+        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry_Growth_Grouped.csv"
       },
-      "width": 300,
-      "height": 400,
+      "width": 390,
+      "height": 300,
       "mark": "line",
       "encoding": {
         "x": {
@@ -17,12 +17,12 @@
           "title": "Year"
         },
         "y": {
-          "field": "Average_Employed",
+          "field": "Total_Employed",
           "type": "quantitative",
           "title": "Number of Employed People"
         },
         "color": {
-          "field": "Industry",
+          "field": "Sector",
           "type": "nominal",
           "title": "Industry"
         },
@@ -33,12 +33,12 @@
             "title": "Year"
           },
           {
-            "field": "Industry",
+            "field": "Sector",
             "type": "nominal",
             "title": "Industry"
           },
           {
-            "field": "Average_Employed",
+            "field": "Total_Employed",
             "type": "quantitative",
             "title": "Number of People Employed"
           }
@@ -47,10 +47,10 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/industry_growth_average.csv"
+        "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry_Growth_Grouped.csv"
       },
-      "width": 300,
-      "height": 100,
+      "width": 390,
+      "height": 50,
       "mark": "line",
       "params": [{"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}],
       "encoding": {
@@ -60,12 +60,12 @@
           "title": "Year"
         },
         "y": {
-          "field": "Average_Employed",
+          "field": "Total_Employed",
           "type": "quantitative",
           "title": "Number of Employed People"
         },
         "color": {
-          "field": "Industry",
+          "field": "Sector",
           "type": "nominal",
           "title": "Industry"
         }

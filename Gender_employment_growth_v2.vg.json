@@ -3,8 +3,8 @@
   "background": "#F0F8FF",
   "vconcat": [
     {
-      "width": 250,
-      "height": 400,
+      "width": 390,
+      "height": 300,
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
       },
@@ -24,19 +24,30 @@
         "color": {
           "field": "Category",
           "type": "nominal",
-          "title": "Category"
+          "title": "Category",
+          "scale": {
+            "domain": ["Total", "Male", "Female"],
+            "range": ["#808080", "#1f77b4", "#ff69b4"]
+          }
         }
       }
     },
     {
-      "width": 400,
-      "height": 100,
-   
+      "width": 390,
+      "height": 50,
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
       },
       "mark": "line",
-      "params":[{"name": "brush", "select": {"type": "interval", "encodings":["x"]}}],
+      "params": [
+        {
+          "name": "brush",
+          "select": {
+            "type": "interval",
+            "encodings": ["x"]
+          }
+        }
+      ],
       "encoding": {
         "x": {
           "field": "Date",
@@ -51,7 +62,11 @@
         "color": {
           "field": "Category",
           "type": "nominal",
-          "title": "Category"
+          "title": "Category",
+          "scale": {
+            "domain": ["Total", "Male", "Female"],
+            "range": ["#808080", "#1f77b4", "#ff69b4"]
+          }
         }
       }
     }
