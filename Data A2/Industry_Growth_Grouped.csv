@@ -1,124 +1,165 @@
 "Date","Sector","Total_Employed"
-1984,"Manufacturing, Construction, and Trade",1547.1
-1984,"Other Services",4935
-1984,"Primary Industries",94.1
-1985,"Manufacturing, Construction, and Trade",1560.675
-1985,"Other Services",5042.4
-1985,"Primary Industries",99.625
-1986,"Manufacturing, Construction, and Trade",1571.275
-1986,"Other Services",5275.125
-1986,"Primary Industries",102.025
-1987,"Manufacturing, Construction, and Trade",1596.35
-1987,"Other Services",5401.925
-1987,"Primary Industries",101.85
-1988,"Manufacturing, Construction, and Trade",1662.45
-1988,"Other Services",5607.875
-1988,"Primary Industries",95.7
-1989,"Manufacturing, Construction, and Trade",1763.475
-1989,"Other Services",5849.75
-1989,"Primary Industries",103.1
-1990,"Manufacturing, Construction, and Trade",1722.5
-1990,"Other Services",6015.5
-1990,"Primary Industries",98.55
-1991,"Manufacturing, Construction, and Trade",1595.8
-1991,"Other Services",5975.25
-1991,"Primary Industries",91
-1992,"Manufacturing, Construction, and Trade",1568.575
-1992,"Other Services",5952.325
-1992,"Primary Industries",86.375
-1993,"Manufacturing, Construction, and Trade",1580.45
-1993,"Other Services",5954.05
-1993,"Primary Industries",87.025
-1994,"Manufacturing, Construction, and Trade",1633.825
-1994,"Other Services",6146.85
-1994,"Primary Industries",84.65
-1995,"Manufacturing, Construction, and Trade",1669.775
-1995,"Other Services",6417.35
-1995,"Primary Industries",83.15
-1996,"Manufacturing, Construction, and Trade",1661.35
-1996,"Other Services",6532.8
-1996,"Primary Industries",86.75
-1997,"Manufacturing, Construction, and Trade",1661.05
-1997,"Other Services",6591.925
-1997,"Primary Industries",80.55
-1998,"Manufacturing, Construction, and Trade",1659.6
-1998,"Other Services",6732.3
-1998,"Primary Industries",84.25
-1999,"Manufacturing, Construction, and Trade",1669.85
-1999,"Other Services",6884.5
-1999,"Primary Industries",78.275
-2000,"Manufacturing, Construction, and Trade",1755.925
-2000,"Other Services",7025.1
-2000,"Primary Industries",79.825
-2001,"Manufacturing, Construction, and Trade",1703.7
-2001,"Other Services",7205.95
-2001,"Primary Industries",78.55
-2002,"Manufacturing, Construction, and Trade",1749.85
-2002,"Other Services",7332.25
-2002,"Primary Industries",83.925
-2003,"Manufacturing, Construction, and Trade",1778.2
-2003,"Other Services",7509.9
-2003,"Primary Industries",88.675
-2004,"Manufacturing, Construction, and Trade",1831.475
-2004,"Other Services",7588.975
-2004,"Primary Industries",100.15
-2005,"Manufacturing, Construction, and Trade",1864.45
-2005,"Other Services",7869.625
-2005,"Primary Industries",118.55
-2006,"Manufacturing, Construction, and Trade",1910.275
-2006,"Other Services",8046.2
-2006,"Primary Industries",131.15
-2007,"Manufacturing, Construction, and Trade",1964.125
-2007,"Other Services",8307.475
-2007,"Primary Industries",136.025
-2008,"Manufacturing, Construction, and Trade",2031.25
-2008,"Other Services",8500.55
-2008,"Primary Industries",163.45
-2009,"Manufacturing, Construction, and Trade",1982.025
-2009,"Other Services",8630.075
-2009,"Primary Industries",162.925
-2010,"Manufacturing, Construction, and Trade",1977.3
-2010,"Other Services",8826.575
-2010,"Primary Industries",187.325
-2011,"Manufacturing, Construction, and Trade",1960.75
-2011,"Other Services",8996.75
-2011,"Primary Industries",219.725
-2012,"Manufacturing, Construction, and Trade",1930.475
-2012,"Other Services",9124.3
-2012,"Primary Industries",263.625
-2013,"Manufacturing, Construction, and Trade",1928.4
-2013,"Other Services",9239.825
-2013,"Primary Industries",262.85
-2014,"Manufacturing, Construction, and Trade",1953.775
-2014,"Other Services",9346.625
-2014,"Primary Industries",242.75
-2015,"Manufacturing, Construction, and Trade",1919.05
-2015,"Other Services",9645.275
-2015,"Primary Industries",221.475
-2016,"Manufacturing, Construction, and Trade",1964.225
-2016,"Other Services",9794.15
-2016,"Primary Industries",217.775
-2017,"Manufacturing, Construction, and Trade",2014.875
-2017,"Other Services",9989.575
-2017,"Primary Industries",228.75
-2018,"Manufacturing, Construction, and Trade",2098.475
-2018,"Other Services",10202.75
-2018,"Primary Industries",253.775
-2019,"Manufacturing, Construction, and Trade",2050.6
-2019,"Other Services",10539.225
-2019,"Primary Industries",262.025
-2020,"Manufacturing, Construction, and Trade",2029.75
-2020,"Other Services",10309.75
-2020,"Primary Industries",263.35
-2021,"Manufacturing, Construction, and Trade",2041.55
-2021,"Other Services",10717.5
-2021,"Primary Industries",284.1
-2022,"Manufacturing, Construction, and Trade",2070
-2022,"Other Services",11239.125
-2022,"Primary Industries",301
-2023,"Manufacturing, Construction, and Trade",2214.55
-2023,"Other Services",11549.75
-2023,"Primary Industries",311.55
-2024,"Manufacturing, Construction, and Trade",2218.9666667
-2024,"Other Services",11871.5999994
-2024,"Primary Industries",292.7666667
+1984,"Manufacturing, Construction, and Trade",2984.3
+1984,"Primary Industries",656.9
+1984,"Public Services and Community Support",2055
+1984,"Services",880
+1985,"Manufacturing, Construction, and Trade",3029.8
+1985,"Primary Industries",657.75
+1985,"Public Services and Community Support",2080.125
+1985,"Services",935.025
+1986,"Manufacturing, Construction, and Trade",3107.55
+1986,"Primary Industries",676.675
+1986,"Public Services and Community Support",2177.25
+1986,"Services",986.95
+1987,"Manufacturing, Construction, and Trade",3149.025
+1987,"Primary Industries",649.825
+1987,"Public Services and Community Support",2266.1
+1987,"Services",1035.175
+1988,"Manufacturing, Construction, and Trade",3279.2
+1988,"Primary Industries",657.55
+1988,"Public Services and Community Support",2334.475
+1988,"Services",1094.8
+1989,"Manufacturing, Construction, and Trade",3462.825
+1989,"Primary Industries",656.65
+1989,"Public Services and Community Support",2428.925
+1989,"Services",1167.925
+1990,"Manufacturing, Construction, and Trade",3443.325
+1990,"Primary Industries",651.925
+1990,"Public Services and Community Support",2534.225
+1990,"Services",1207.075
+1991,"Manufacturing, Construction, and Trade",3277
+1991,"Primary Industries",615.7
+1991,"Public Services and Community Support",2576.6
+1991,"Services",1192.75
+1992,"Manufacturing, Construction, and Trade",3212.875
+1992,"Primary Industries",587.625
+1992,"Public Services and Community Support",2615.6
+1992,"Services",1191.175
+1993,"Manufacturing, Construction, and Trade",3243.225
+1993,"Primary Industries",585.1
+1993,"Public Services and Community Support",2648.375
+1993,"Services",1144.825
+1994,"Manufacturing, Construction, and Trade",3333
+1994,"Primary Industries",573.675
+1994,"Public Services and Community Support",2710.675
+1994,"Services",1247.975
+1995,"Manufacturing, Construction, and Trade",3405.4
+1995,"Primary Industries",568.925
+1995,"Public Services and Community Support",2854.85
+1995,"Services",1341.1
+1996,"Manufacturing, Construction, and Trade",3434
+1996,"Primary Industries",572.125
+1996,"Public Services and Community Support",2892.7
+1996,"Services",1382.075
+1997,"Manufacturing, Construction, and Trade",3420.1
+1997,"Primary Industries",569.025
+1997,"Public Services and Community Support",2922.375
+1997,"Services",1422.025
+1998,"Manufacturing, Construction, and Trade",3462.525
+1998,"Primary Industries",574.275
+1998,"Public Services and Community Support",2967.3
+1998,"Services",1472.05
+1999,"Manufacturing, Construction, and Trade",3518.7
+1999,"Primary Industries",583
+1999,"Public Services and Community Support",3036.725
+1999,"Services",1494.2
+2000,"Manufacturing, Construction, and Trade",3574.9
+2000,"Primary Industries",589.825
+2000,"Public Services and Community Support",3091.3
+2000,"Services",1604.825
+2001,"Manufacturing, Construction, and Trade",3546.325
+2001,"Primary Industries",587.775
+2001,"Public Services and Community Support",3214.625
+2001,"Services",1639.475
+2002,"Manufacturing, Construction, and Trade",3617.85
+2002,"Primary Industries",568.85
+2002,"Public Services and Community Support",3340.025
+2002,"Services",1639.3
+2003,"Manufacturing, Construction, and Trade",3726.775
+2003,"Primary Industries",546.875
+2003,"Public Services and Community Support",3401.825
+2003,"Services",1701.3
+2004,"Manufacturing, Construction, and Trade",3791.4
+2004,"Primary Industries",546.55
+2004,"Public Services and Community Support",3481.1
+2004,"Services",1701.55
+2005,"Manufacturing, Construction, and Trade",3894.5
+2005,"Primary Industries",570.55
+2005,"Public Services and Community Support",3567.825
+2005,"Services",1819.75
+2006,"Manufacturing, Construction, and Trade",3961.4
+2006,"Primary Industries",580.85
+2006,"Public Services and Community Support",3650.675
+2006,"Services",1894.7
+2007,"Manufacturing, Construction, and Trade",4083.925
+2007,"Primary Industries",585.875
+2007,"Public Services and Community Support",3796.35
+2007,"Services",1941.475
+2008,"Manufacturing, Construction, and Trade",4215.575
+2008,"Primary Industries",629.725
+2008,"Public Services and Community Support",3890.6
+2008,"Services",1959.35
+2009,"Manufacturing, Construction, and Trade",4164.25
+2009,"Primary Industries",644.375
+2009,"Public Services and Community Support",4028.575
+2009,"Services",1937.825
+2010,"Manufacturing, Construction, and Trade",4142.675
+2010,"Primary Industries",683.375
+2010,"Public Services and Community Support",4143.1
+2010,"Services",2022.05
+2011,"Manufacturing, Construction, and Trade",4151.1
+2011,"Primary Industries",682.95
+2011,"Public Services and Community Support",4272.025
+2011,"Services",2071.15
+2012,"Manufacturing, Construction, and Trade",4092.475
+2012,"Primary Industries",730.05
+2012,"Public Services and Community Support",4341.375
+2012,"Services",2154.5
+2013,"Manufacturing, Construction, and Trade",4162.1
+2013,"Primary Industries",708.775
+2013,"Public Services and Community Support",4455.525
+2013,"Services",2104.675
+2014,"Manufacturing, Construction, and Trade",4168.975
+2014,"Primary Industries",711.05
+2014,"Public Services and Community Support",4518.025
+2014,"Services",2145.1
+2015,"Manufacturing, Construction, and Trade",4157.65
+2015,"Primary Industries",677.375
+2015,"Public Services and Community Support",4701.075
+2015,"Services",2249.7
+2016,"Manufacturing, Construction, and Trade",4200.65
+2016,"Primary Industries",670.425
+2016,"Public Services and Community Support",4803.05
+2016,"Services",2302.025
+2017,"Manufacturing, Construction, and Trade",4264.625
+2017,"Primary Industries",693.35
+2017,"Public Services and Community Support",4998.325
+2017,"Services",2276.9
+2018,"Manufacturing, Construction, and Trade",4382.05
+2018,"Primary Industries",742
+2018,"Public Services and Community Support",5090.975
+2018,"Services",2339.975
+2019,"Manufacturing, Construction, and Trade",4367.2
+2019,"Primary Industries",747.975
+2019,"Public Services and Community Support",5289.95
+2019,"Services",2446.725
+2020,"Manufacturing, Construction, and Trade",4263.35
+2020,"Primary Industries",763
+2020,"Public Services and Community Support",5154.275
+2020,"Services",2422.225
+2021,"Manufacturing, Construction, and Trade",4334.8
+2021,"Primary Industries",758.625
+2021,"Public Services and Community Support",5448.85
+2021,"Services",2500.875
+2022,"Manufacturing, Construction, and Trade",4434.175
+2022,"Primary Industries",768.25
+2022,"Public Services and Community Support",5733.875
+2022,"Services",2673.825
+2023,"Manufacturing, Construction, and Trade",4643.1
+2023,"Primary Industries",776.375
+2023,"Public Services and Community Support",5966.2
+2023,"Services",2690.175
+2024,"Manufacturing, Construction, and Trade",4665.8666664
+2024,"Primary Industries",819.7333334
+2024,"Public Services and Community Support",6171.8666664
+2024,"Services",2725.8666666
