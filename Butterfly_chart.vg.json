@@ -3,7 +3,7 @@
     "data": {
       "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Males_and_Females_Proportion_Data.csv"
     },
-    "background": "#e3f1fe",
+    "background": "#F0F8FF",
     "width": 400,
     "height": 300,
     "transform": [

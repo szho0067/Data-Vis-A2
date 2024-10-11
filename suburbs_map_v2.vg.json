@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Number of Jobs per Square Kilometer within the State",
   "width": 500,
-  "height": 600,
-  "background": "#e3f1fe",
+  "height": 420,
+  "background": "#F0F8FF",
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/SA2_data.csv"
   },
@@ -39,7 +39,7 @@
     "color": {
       "field": "Jobs_per_SQKM",
       "type": "quantitative",
-      "title": "Jobs per Square Kilometer",
+      "title": "Jobs per km^2",
       "scale": {
         "domain": [0, 5],  
         "scheme": "reds" 
