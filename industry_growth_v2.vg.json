@@ -26,8 +26,8 @@
           "type": "nominal",
           "title": "Industry",
           "scale": {
-            "domain": ["Agriculture", "Mining", "Manufacturing", "Construction", "Retail Trade"],
-            "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"] 
+            "domain": ["Manufacturing, Construction, and Trade","Other Services","Primary Industries","Public Services and Community Support","Professional , Financial and Administrative Services"],
+            "range": ["#E76F51", "#F4A261", "#E9C46A", "#2A9D8F", "#264653"] 
           }
         },
         "tooltip": [
