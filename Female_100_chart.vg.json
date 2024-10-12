@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#F0F8FF",
   "params": [
     {
       "name": "yearParam",
@@ -18,163 +19,218 @@
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/male_aggregated_data.csv"
       },
-      "transform": [
+      "height": 200,
+      "width": 220,
+      "layer": [
         {
-          "filter": {
-            "field": "Employment_Status",
-            "oneOf": [
-              "Employed full time",
-              "Employed part time",
-              "Not in the labour force  (NILF) ",
-              "Unemployed total"
+          "transform": [
+            {
+              "filter": {
+                "field": "Employment_Status",
+                "oneOf": [
+                  "Employed full time",
+                  "Employed part time",
+                  "Not in the labour force  (NILF) ",
+                  "Unemployed total"
+                ]
+              }
+            },
+            {
+              "filter": "datum.Age_Group !== '15-64 years'"
+            },
+            {
+              "aggregate": [
+                {"op": "sum", "field": "Average_Employed", "as": "Total_Employed"}
+              ],
+              "groupby": ["Year", "Age_Group", "Employment_Status"]
+            },
+            {
+              "window": [
+                {"op": "sum", "field": "Total_Employed", "as": "Total_Per_Age"}
+              ],
+              "frame": [null, null],
+              "groupby": ["Year", "Age_Group"]
+            },
+            {
+              "calculate": "datum.Total_Employed / datum.Total_Per_Age",
+              "as": "Percentage"
+            },
+            {
+              "filter": "datum.Year == yearParam"
+            }
+          ],
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "Age_Group",
+              "type": "nominal",
+              "title": "Age Group"
+            },
+            "y": {
+              "aggregate": "sum",
+              "field": "Percentage",
+              "type": "quantitative",
+              "stack": "normalize",
+              "title": "Percentage"
+            },
+            "color": {
+              "field": "Employment_Status",
+              "type": "nominal",
+              "title": "Employment Status",
+              "scale": {
+                "domain": [
+                  "Employed full time",
+                  "Employed part time",
+                  "Not in the labour force  (NILF) ",
+                  "Unemployed total"
+                ],
+                "range": [
+                  "#1E90FF",  
+                  "#4169E1", 
+                  "#6495ED",  
+                  "#87CEEB" 
+                ]
+              }
+            },
+            "tooltip": [
+              {"field": "Employment_Status", "type": "nominal", "title": "Employment Status"},
+              {"field": "Percentage", "type": "quantitative", "title": "Percentage", "format": ".2%"},
+              {"field": "Year", "type": "ordinal", "title": "Year"}
             ]
           }
         },
         {
-          "filter": "datum.Age_Group !== '15-64 years'"
-        },
-        {
-          "aggregate": [
-            {"op": "sum", "field": "Average_Employed", "as": "Total_Employed"}
-          ],
-          "groupby": ["Year", "Age_Group", "Employment_Status"]
-        },
-        {
-          "window": [
-            {"op": "sum", "field": "Total_Employed", "as": "Total_Per_Age"}
-          ],
-          "frame": [null, null],
-          "groupby": ["Year", "Age_Group"]
-        },
-        {
-          "calculate": "datum.Total_Employed / datum.Total_Per_Age",
-          "as": "Percentage"
-        },
-        {
-          "filter": "datum.Year == yearParam"
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 140,
+            "dy": 10
+          },
+          "encoding": {
+            "text": {
+              "value": ["It can be noted that", "most men are able to find full-time roles", "conforming to societal standards", "of being a bread-winner. There","is a noticeable increase in the", "percentage of individuals categorized", "as 'Not in the Labor Force' (NILF)", "when comparing the '60-64 years'", "and 65 years, and over age groups." , "This suggests that many men typically","retire after the age","of 65 contributing to", "the sharp rise in NILF","status in th 65 years and over group."]
+            },
+            "x": {
+              "value": 100
+            },
+            "y": {
+              "value": 100
+            }
+          }
         }
-      ],
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "Age_Group",
-          "type": "nominal",
-          "title": "Age Group"
-        },
-        "y": {
-          "aggregate": "sum",
-          "field": "Percentage",
-          "type": "quantitative",
-          "stack": "normalize",
-          "title": "Percentage"
-        },
-        "color": {
-          "field": "Employment_Status",
-          "type": "nominal",
-          "title": "Employment Status",
-          "scale": {
-            "domain": [
-              "Employed full time",
-              "Employed part time",
-              "Not in the labour force  (NILF) ",
-              "Unemployed total"
-            ],
-            "range": [
-              "#1E90FF",  
-              "#4169E1", 
-              "#6495ED",  
-              "#87CEEB",  
-              "#ADD8E6"   
-            ]
-          }
-        },
-        "tooltip": [
-          {"field": "Employment_Status", "type": "nominal", "title": "Employment Status"},
-          {"field": "Percentage", "type": "quantitative", "title": "Percentage", "format": ".2%"},
-          {"field": "Year", "type": "ordinal", "title": "Year"}
-        ]
-      }
+      ]
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/female_aggregated_data.csv"
       },
-      "transform": [
+      "height": 200,
+      "width": 220,
+      "layer": [
         {
-          "filter": {
-            "field": "Employment_Status",
-            "oneOf": [
-              "Employed full time",
-              "Employed part time",
-              "Not in the labour force  (NILF) ",
-              "Unemployed total"
+          "transform": [
+            {
+              "filter": {
+                "field": "Employ_Status",
+                "oneOf": [
+                  "Employed full time",
+                  "Employed part time",
+                  "Not in the labour force  (NILF) ",
+                  "Unemployed total"
+                ]
+              }
+            },
+            {
+              "filter": "datum.Age_Group !== '15-64 years'"
+            },
+            {
+              "aggregate": [
+                {"op": "sum", "field": "Average_Employed", "as": "Total_Employed"}
+              ],
+              "groupby": ["Year", "Age_Group", "Employ_Status"]
+            },
+            {
+              "window": [
+                {"op": "sum", "field": "Total_Employed", "as": "Total_Per_Age"}
+              ],
+              "frame": [null, null],
+              "groupby": ["Year", "Age_Group"]
+            },
+            {
+              "calculate": "datum.Total_Employed / datum.Total_Per_Age",
+              "as": "Percentage"
+            },
+            {
+              "filter": "datum.Year == yearParam"
+            }
+          ],
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "Age_Group",
+              "type": "nominal",
+              "title": "Age Group"
+            },
+            "y": {
+              "aggregate": "sum",
+              "field": "Percentage",
+              "type": "quantitative",
+              "stack": "normalize",
+              "title": "Percentage"
+            },
+            "color": {
+              "field": "Employ_Status",
+              "type": "nominal",
+              "title": "Employment Status",
+              "scale": {
+                "domain": [
+                  "Employed full time",
+                  "Employed part time",
+                  "Not in the labour force  (NILF) ",
+                  "Unemployed total"
+                ],
+                "range": [
+                  "#DB7093",
+                  "#FF1493",
+                  "#FF69B4",
+                  "#FFB6C1"
+                ]
+              }
+            },
+            "tooltip": [
+              {"field": "Employ_Status", "type": "nominal", "title": "Employment Status"},
+              {"field": "Percentage", "type": "quantitative", "title": "Percentage", "format": ".2%"},
+              {"field": "Year", "type": "ordinal", "title": "Year"}
             ]
           }
         },
         {
-          "filter": "datum.Age_Group !== '15-64 years'"
-        },
-        {
-          "aggregate": [
-            {"op": "sum", "field": "Average_Employed", "as": "Total_Employed"}
-          ],
-          "groupby": ["Year", "Age_Group", "Employment_Status"]
-        },
-        {
-          "window": [
-            {"op": "sum", "field": "Total_Employed", "as": "Total_Per_Age"}
-          ],
-          "frame": [null, null],
-          "groupby": ["Year", "Age_Group"]
-        },
-        {
-          "calculate": "datum.Total_Employed / datum.Total_Per_Age",
-          "as": "Percentage"
-        },
-        {
-          "filter": "datum.Year == yearParam"
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "color": "#FF1493",
+            "dx": 140,
+            "dy": 10
+          },
+          "encoding": {
+            "text": {
+              "value": ["As compared to males,", "it can be seen that there", "is a higher percentage of", "females who are unemployed", " or NILF. This may be due to", "socio-economic constraints, ","gender roles, or childcare and","responsibilities." ]
+            },
+            "x": {
+              "value": 100
+            },
+            "y": {
+              "value": 100
+            }
+            
+          }
         }
-      ],
-      "mark": "bar",
-      "encoding": {
-        "x": {
-          "field": "Age_Group",
-          "type": "nominal",
-          "title": "Age Group"
-        },
-        "y": {
-          "aggregate": "sum",
-          "field": "Percentage",
-          "type": "quantitative",
-          "stack": "normalize",
-          "title": "Percentage"
-        },
-        "color": {
-          "field": "Employment_Status",
-          "type": "nominal",
-          "title": "Employment Status",
-          "scale": {
-            "domain": [
-              "Employed full time",
-              "Employed part time",
-              "Not in the labour force  (NILF) ",
-              "Unemployed total"
-            ],
-            "range": [
-              "#DB7093",
-              "#FF1493",
-              "#FF69B4",
-              "#FFB6C1",
-              "#FFC0CB"
-            ]
-          }
-        },
-        "tooltip": [
-          {"field": "Employment_Status", "type": "nominal", "title": "Employment Status"},
-          {"field": "Percentage", "type": "quantitative", "title": "Percentage", "format": ".2%"},
-          {"field": "Year", "type": "ordinal", "title": "Year"}
-        ]
-      }
+      ]
     }
-  ]
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
 }

@@ -3,7 +3,7 @@
 
 <head>
   <title>Australia Employment</title>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <!-- Import Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
@@ -24,96 +24,75 @@
 
   <style>
     body {
-      background-color: #e3f1fe; /* Light blue background */
-      color: black; /* Black text for better contrast */
-      margin: 0; /* Remove any default margin */
-      padding: 0; /* Remove any default padding */
+      background-color: #e3f1fe;
+      color: black;
+      margin: 0;
+      padding: 0;
     }
 
-    /* Center headers */
     .heading-band {
-      background-color: #021591; /* Light gray background for band */
+      background-color: #021591;
       padding: 10px;
-      margin: 0; /* Remove default margins */
+      margin: 0;
       text-align: center;
     }
 
     h1, h2 {
-      margin: 0; /* Remove any default margin on h1 and h2 */
-      padding: 10px 0; /* Add padding inside the heading */
+      margin: 0;
+      padding: 10px 0;
+      color: white;
     }
 
-    /* Center map container */
+    h3 {
+      background-color: #ADD8E6; /* Light blue color */
+      padding: 10px;
+      color: #000000; /* Text color for readability */
+      margin: 0;
+      text-align: center;
+      border-radius: 5px;
+    }
+
     .map-container {
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      height: 100%; /* Make the container take full height */
-    }
-
-    .single-container {
-      display: flex;
-      justify-content: flex-start; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      height: 100%; /* Make the container take full height */
-    
-    }
-
-    .pure-u-1-2 {
-      display: flex;
-      justify-content: center; /* Center content horizontally */
-      align-items: center; /* Center content vertically */
-    }
-    
-
-    .vis-container {
-      width: 90%; /* Adjust the width as needed */
-      max-width: 600px; /* Max width for better visual control */
-      background-color: aliceblue; /* Same background color */
-    }
-
-    /* Center the description in the middle of the page */
-    .description-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 200px; /* Adjust height as needed */
+      height: 100%;
     }
 
-    .description {
-      text-align: center; /* Center text inside the container */
-    }
-
-    /* Center Australia's Employment Growth section */
-    .growth-container {
+    .map-container_2 {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 40px 0;
+      justify-content: left;
+      align-items: left;
+      height: 100%;
     }
 
-    .growth-content {
-      text-align: center;
-      max-width: 800px; /* Control the width of the content */
-      margin: 20px;
+    .vis-container {
+      width: 90%;
+      max-width: 600px;
+      background-color: aliceblue;
     }
 
-    /* Add border around each section */
     .section-box {
-      border: 2px solid #021591; /* Add a blue border */
-      padding: 10px; /* Space inside the border */
-      margin: 10px; /* Space outside the border */
-      border-radius: 10px; /* Rounded corners */
+      border: 2px solid #021591;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
       background-color: aliceblue;
-      width: 95%
+      width: 95%;
     }
 
-    /* Flex container for Hello boxes */
-    .hello-container {
-      display: flex;
-      justify-content: space-around; /* Space the items evenly */
-      align-items: center;
+    .large-container {
+      height: 100%;
+      width: 900px
+    }
+
+    .small-container {
+      margin-top: 10px;
+    }
+
+    .centered-title {
+      text-align: center;
     }
   </style>
 
@@ -131,7 +110,7 @@
     </div>
 
     <div class="section-box" style="text-align: center;">
-      <p>Australia Employment text.balsdajskdajksdhjkashdjkashdkjashd</p>
+      <p>Australia Employment text.</p>
     </div>
 
     <!-- Subheading and map section -->
@@ -142,15 +121,15 @@
       
       <!-- Maps 1 and 8 side by side -->
       <div class="pure-u-1-2">
-        <div class = "section-box">
+        <div class="section-box">
           <div class="map-container">
             <div id="map1" class="vis-container"></div>
           </div>
-         </div> 
+        </div>
       </div>
 
       <div class="pure-u-1-2">
-        <div class = "section-box">
+        <div class="section-box">
           <div class="map-container">
             <div id="map8" class="vis-container"></div>
           </div>
@@ -175,22 +154,20 @@
       </div>
 
       <div class="pure-u-1-1">
-        <div class = "section-box">
+        <div class="section-box">
           <div class="single-container">
-            <!-- Centered title -->
             <div id="map4" class="vis-container"></div>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
 
-    <div class = "pure-g">
-      <div class = "pure-u-1-1">
-        <div class ="section-box">
-            <p> Text description</p>
-        </div>  
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="section-box">
+          <p>Text description</p>
+        </div>
       </div>
-
     </div>
 
     <!-- Australia's Employment Growth Section -->
@@ -201,7 +178,7 @@
       
       <!-- Maps 2 and 3 side by side -->
       <div class="pure-u-1-2">
-        <div class = "section-box">
+        <div class="section-box">
           <div class="map-container">
             <div id="map2" class="vis-container"></div>
           </div>
@@ -209,7 +186,7 @@
       </div>
 
       <div class="pure-u-1-2">
-        <div class = "section-box">
+        <div class="section-box">
           <div class="map-container">
             <div id="map3" class="vis-container"></div>
           </div>
@@ -224,46 +201,46 @@
       </div>
 
       <div class="pure-u-1-2">
-        <div class = "section-box">
-          <div class="map-container">
-            <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
-            <div id="map5" class="vis-container"></div>
+        <div class="pure-u-1-1">
+          <div class="section-box small-container">
+            <h3 class="centered-title">Gender Roles in the Workplace</h3>
+            <p>Gender roles within the workplace contribute to differing employment rates between <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span>. Traditionally, <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> have been more likely to occupy full-time positions and leadership roles, while <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> often face barriers such as balancing work with family responsibilities, leading to higher rates of part-time employment or career breaks. Societal expectations around caregiving, coupled with limited access to flexible work arrangements, can hinder <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span>’s career progression. As a result, <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> tend to have different employment patterns, with <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> typically enjoying higher labor force participation and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> experiencing greater job instability or lower participation rates, particularly during childbearing and caregiving years.</p>
           </div>
         </div>
+        <div class="pure-u-1-1">
+          <div class="section-box small-container">
+            <h3 class="centered-title">Proportions of Gender Employment</h3>
+            <div class="map-container_2">
+              
+              <div id="map5" class="vis-container"></div>
+            </div>
+          </div>
+        </div>    
+
+
       </div>
-      
+
       <div class="pure-u-1-2">
-        <div class = "section-box">
-            <h3 class="centered-title">Proportions of Female Employment by Age Group</h3>
-            <p> Text </p>
-          </div>
-        </div>
-      </div> 
+          <div class="pure-u-1-1">
+            <div class="section-box small-container">
+              <h3 class="centered-title">Gender Roles in the Workplace</h3>
+              <p>The gender pay gap refers to the disparity in earnings between <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> in the workforce. It is a multifaceted issue influenced by various factors, including discrimination, occupational segregation, and differences in work experience. On average, <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> tend to earn less than <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> for similar roles due to biases in hiring and promotion practices, as well as societal norms that undervalue work traditionally performed by <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span>. Moreover, the pay gap is often exacerbated by the lack of access to flexible work arrangement and the expectation that <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> will take on greater caregiving responsibilities. Hence, <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> are more likely to work part-time or take career breaks, leading to fewer opportunities for advancement and lower lifetime earnings compared to <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span>.</p>
 
   
-      <!-- Map 6 and Map 7 side by side -->
-      <div class="pure-g">
-        <div class="pure-u-1-2">
-          <div class = "section-box">
-            <div class="map-container">
-              <h3 class="centered-title">Proportions of Male Employment by Age Group</h3>
-              <div id="map6" class="vis-container"></div>
+
             </div>
           </div>
-        </div>
-
-        <div class="pure-u-1-2">
-          <div class = "section-box">
-            <div class="map-container">
-              <h3 class="centered-title">Median Income by Gender</h3>
-              <div id="map7" class="vis-container"></div>
+          <div class="pure-u-1-1">
+            <div class="section-box small-container">
+              <h3 class="centered-title">Proportions of Gender Employment</h3>
+              <div class="map-container_2">
+                
+                <div id="map7" class="vis-container"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-        
-
     </div>
 
   </div>

@@ -14,7 +14,7 @@ var vg_4 = "test_dp_v3.vg.json";
 vegaEmbed("#map4", vg_4, {actions: false}).then(function(result) {
 }).catch(console.error);
 
-var vg_5 = "Female_Proportions_By_Year.vg.json";
+var vg_5 = "Female_100_chart.vg.json";
 vegaEmbed("#map5", vg_5, {actions: false}).then(function(result) {
 }).catch(console.error);
 
