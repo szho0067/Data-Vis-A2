@@ -22,7 +22,7 @@ var vg_6 = "Male_Proportions_By_Year.vg.json";
 vegaEmbed("#map6", vg_6, {actions: false}).then(function(result) {
 }).catch(console.error);
 
-var vg_7 = "Gender_pay_gap.vg.json";
+var vg_7 = "sankey.vg.json";
 vegaEmbed("#map7", vg_7, {actions: false}).then(function(result) {
 }).catch(console.error);
 
