@@ -5,7 +5,7 @@
     },
     "background": "#F0F8FF",
     "width": "container",
-    "height": 420,
+    "height": 475,
 
     "transform": [
       {
@@ -84,7 +84,12 @@
           ],
           "color": {
             "field": "Industry",
-            "type": "nominal"
+            "type": "nominal",
+            "scale": {
+            "domain": ["Manufacturing, Construction, and Trade","Other Services","Primary Industries","Public Services and Community Support","Professional , Financial and Administrative Services"],
+            "range": ["#E76F51", "#F4A261", "#E9C46A", "#2A9D8F", "#219EBC"] 
+          }
+            
           }
         }
       }

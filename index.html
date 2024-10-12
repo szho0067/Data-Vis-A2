@@ -70,6 +70,7 @@
 
     .vis-container {
       width: 100%;
+      
       background-color: aliceblue;
     }
 
@@ -117,6 +118,9 @@
     .centered-title {
       text-align: center;
     }
+    .height-box{
+      height: 100%
+    }
   </style>
 
 </head>
@@ -145,6 +149,7 @@
       <!-- Maps 1 and 8 side by side -->
       <div class="pure-u-1-2">
         <div class="section-box">
+          <h3 class="centered-title">Percentage of Employed People in the State</h3>
           <div class="map-container">
             <div id="map1" class="vis-container-2"></div>
           </div>
@@ -153,6 +158,7 @@
 
       <div class="pure-u-1-2">
         <div class="section-box">
+          <h3 class="centered-title">Number of Jobs per km^2</h3>
           <div class="map-container">
             <div id="map8" class="vis-container-2"></div>
           </div>
@@ -165,6 +171,7 @@
       <div class="pure-u-1-2">
         <div class="hello-container">
           <div class="section-box">
+            <h3 class="centered-title">Key Findings</h3>
             <p>From the above map, it can be seen that over the years, there has been a steady increase in the percentage of people employed within each state. Additionally, the percentage of employment has consistently been highest around Darwin, while remaining lowest in Tasmania.  This may pose to be interesting are posed to be places of job opportunity within Australia. Darwin's economy is heavily influenced by specific sectors like mining, construction, defense, and logistics, which could create strong demand for labor, leading to higher employment rates. Sydney and Victoria have more diversified economies, and while they have large job markets, they might also experience more competition and unemployment in some industries.</p>
           </div>
         </div>
@@ -173,7 +180,12 @@
       <div class="pure-u-1-2">
         <div class="hello-container">
           <div class="section-box">
-            <p>Additionally, it can be seen that states such as Melbourne, Sydney and Perth offer many more jobs as compared to Darwin per km^2. In spite of this, Darwin still has a higher percentage of population employed. This further solidifies the idea that states such as Melbourne, Sydney and Perth are more oversaturated in terms of employment opportunities. </p>
+            <h3 class="centered-title">Key Findings</h3>
+            <p>Additionally, it can be seen that states such as Melbourne, Sydney and Perth offer many more jobs as compared to Darwin per km^2. In spite of this, Darwin still has a higher percentage of population employed. </p>
+            <p>This further solidifies the idea that states such as Melbourne, Sydney and Perth are more oversaturated in terms of employment opportunities. </p>
+            </p>
+            <span style='color:aliceblue; font-weight:bold; font-style:italic;'>a</span>
+            </p>
           </div>
         </div>
       </div>
@@ -202,18 +214,46 @@
           <div class="section-box">
             <h3 class="centered-title">Division of Sectors</h3>
             <p>Industries can be categorized into four key sectors based on their characteristics. </p>
-            <p>Primary Industries includes: Agriculture, Forestry and Fishing, Mining, and Electricity, Gas, Water and Waste Services.</p>  
-            <p> Manufacturing, Construction, and Trade includes: Manufacturing, Construction, Wholesale Trade, Retail Trade, and Transport, Postal and Warehousing. </p> 
-            <p>Services (Financial, Professional, and Administrative) includes: Financial and Insurance Services, Rental, Hiring and Real Estate Services, Administrative and Support Services, Professional, Scientific and Technical Services, and Information Media and Telecommunications.</p> 
-            <p>Public Services and Community Support includes : Education and Training, Health Care and Social Assistance, Public Administration and Safety, Accommodation and Food Services, Arts and Recreation Services, and Other Services.</p>
+            
+            <p> 
+              <span style="font-weight: bold; font-style: italic; color: #E76F51;">Manufacturing</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #E76F51;">Construction and Trade</span>, includes: 
+              <span style="font-weight: bold; font-style: italic; color: #E76F51;">Wholesale Trade</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #E76F51;">Retail Trade</span>, and 
+              <span style="font-weight: bold; font-style: italic; color: #E76F51;">Transport, Postal and Warehousing</span>.
+            </p>
+            
+            <p><span style="font-weight: bold; font-style: italic; color: #E9C46A;">Primary Industries</span> includes: <span style="font-weight: bold; font-style: italic; color: #E9C46A;">Agriculture, Forestry and Fishing</span>, <span style="font-weight: bold; font-style: italic; color: #E9C46A;">Mining</span>, and <span style="font-weight: bold; font-style: italic; color: #E9C46A;">Electricity, Gas, Water and Waste Services</span>.</p>
+
+            <p>
+              <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Public Services and Community Support</span> includes: 
+              <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Education and Training</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Health Care and Social Assistance</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Public Administration and Safety</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Accommodation and Food Services</span>, and 
+              <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Arts and Recreation Services</span>.
+            </p>
+            
+            
+            <p>
+              <span style="font-weight: bold; font-style: italic; color: #219EBC;">Professional, Financial and Administrative Services </span> includes: 
+              <span style="font-weight: bold; font-style: italic; color: #219EBC;">Financial and Insurance Services</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #219EBC;">Rental, Hiring and Real Estate Services</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #219EBC;">Administrative and Support Services</span>, 
+              <span style="font-weight: bold; font-style: italic; color: #219EBC;">Professional, Scientific and Technical Services</span>, and 
+              <span style="font-weight: bold; font-style: italic; color: #219EBC;">Information Media and Telecommunications</span>.
+            </p>
+            
+            
+            
           </div>
         </div>
 
         <div class="pure-u-1-1">
           <div class="section-box">
             <h3 class="centered-title">Key Finds</h3>
-            <p>From the results shown, it can be seen that primary industries generally pays the highest within Western Australia's primary services pay being the the highest out of any sector amongst all the States.
-              The results show that states with a strong presence in particular industries tend to offer higher compensation for those sectors. For instance, Sydney, known for its robust financial services industry, has the highest median pay for financial services compared to other states. 
+            <p>From the results shown, it can be seen that <span style="font-weight: bold; font-style: italic; color: #E9C46A;">primary industries</span> generally pays the highest within Western Australia's <span style="font-weight: bold; font-style: italic; color: #E9C46A;">primary industries</span> pay being the the highest out of any sector amongst all the States.
+              The results show that states with a strong presence in particular industries tend to offer higher compensation for those sectors. For instance, Sydney, known for its robust <span style="font-weight: bold; font-style: italic; color: #219EBC;">financial services industry</span>, has the highest median pay for <span style="font-weight: bold; font-style: italic; color: #219EBC;">financial services</span> compared to other states. 
             </p>
           </div>
         </div>
@@ -232,6 +272,7 @@
       <!-- Maps 2 and 3 side by side -->
       <div class="pure-u-1-2">
         <div class="section-box">
+          <h3 class="centered-title">Growth of Employment within each Sector overtime</h3>
           <div class="map-container">
             <div id="map2" class="small-container"></div>
           </div>
@@ -240,6 +281,7 @@
 
       <div class="pure-u-1-2">
         <div class="section-box">
+          <h3 class="centered-title">Growth of Employment amongst Males and Females ovetime</h3>
           <div class="map-container">
             <div id="map3" class="small-container"></div>
           </div>
@@ -249,9 +291,9 @@
       <div class = "pure-u-1-2">
         <div class="section-box">
           <h3 class="centered-title">Key Findings</h3>
-          <p> It can be seen that up until 2015, the "Manufacturing, Construction, and Trade" was most popular. This was overtaken by the "Public Services and Community Support" sector.</p>
-          <p> The rate of growth in employment of "Public Services and Community Support" is the most rapid.</p> 
-          <p> The amount of people employed within the "Primary Services" sector, as well as other services, seems to remain constant, showcasing a general lack of interest and demand of these sectors within Australia.
+          <p> It can be seen that up until 2015, the <span style="font-weight: bold; font-style: italic; color: #E76F51;">Manufacturing, Construction, and Trade</span> was most popular. This was overtaken by the "Public Services and Community Support" sector.</p>
+          <p> The rate of growth in employment of <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Public Services and Community Support</span> is the most rapid.</p> 
+          <p> The amount of people employed within the <span style="font-weight: bold; font-style: italic; color: #E9C46A;">Primary Industries</span> sector, as well as other services, seems to remain constant, showcasing a general lack of interest and demand of these sectors within Australia.
           </p>
         </div>
       </div>
@@ -259,11 +301,11 @@
       <div class = "pure-u-1-2">
         <div class="section-box">
           <h3 class="centered-title">Key Findings</h3>
-          <p> Over the years, the number of males employed has always been higher than the number of females employed.</p>
+          <p> Over the years, the number of <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>males</span> employed has always been higher than the number of <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>females</span> employed.</p>
           
-          <p> However, the growth in the number of females employed per year is more rapid than the growth in the number of males employed per year. </p> 
+          <p> However, the growth in the number of <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>females</span> employed per year is more rapid than the growth in the number of <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>males</span> employed per year. </p> 
           
-          <p> This may be due to changing perceptions about the role of women within the working world. </p>
+          <p> This may be due to changing perceptions about the role of <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> within the working world. </p>
 
           <p> The section below showcases the correlation of gender and employment.</p>
 
@@ -316,8 +358,8 @@
 
       <div class="pure-u-1">
         <div class="section-box large-container">
-          <h3 class="centered-title">Gender Pay Gap</h3>
-          <div class="map-container_2">
+          <h3 class="centered-title">Month to Month Changes in Employment Status in Australia</h3>
+          <div class="map-container">
             <div id="map9" class="vis-container"></div>
           </div>
         </div>
@@ -336,9 +378,13 @@
       <div class = "pure-u-1-2">
         <div class="section-box">
           <h3 class="centered-title">Key Findings</h3>
-          <p> Over the years, it can be seen that a larger proportion of people are either employed full-time or NILF.</p>
-          <p> Very few Australians are unemployed.</p> 
+          <p> Over the years, it can be seen that very few Australians are unemployed and a larger proportion of people are either employed full-time or NILF.</p>
           <p>Most Australians tend to stick to their original employment status with the most popular transitions being between employed part-time to employed full-time or vise versa.
+          </p>
+          <span style='color:aliceblue; font-weight:bold; font-style:italic;'>a</span>
+          </p>
+          </p>
+          <span style='color:aliceblue; font-weight:bold; font-style:italic;'>a</span>
           </p>
         </div>
       </div>
