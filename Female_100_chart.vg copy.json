@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/male_aggregated_data.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Employment_Status",
+        "oneOf": [
+          "Employed full time",
+          "Employed part time",
+          "Not in the labour force  (NILF) ",
+          "Unemployed total"
+        ]
+      }
+    },
+    {
+      "filter": "datum.Age_Group !== '15-64 years'"
+    },
+    {
+      "aggregate": [
+        {"op": "sum", "field": "Average_Employed", "as": "Total_Employed"}
+      ],
+      "groupby": ["Year", "Age_Group", "Employment_Status"]
+    },
+    {
+      "window": [
+        {"op": "sum", "field": "Total_Employed", "as": "Total_Per_Age"}
+      ],
+      "frame": [null, null],
+      "groupby": ["Year", "Age_Group"]
+    },
+    {
+      "calculate": "datum.Total_Employed / datum.Total_Per_Age",
+      "as": "Percentage"
+    },
+    {
+      "filter": "datum.Year == yearParam"
+    }
+  ],
+  "params": [
+    {
+      "name": "yearParam",
+      "value": 1978,
+      "bind": {
+        "input": "range",
+        "min": 1978,
+        "max": 2023,
+        "step": 1,
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Age_Group",
+      "type": "nominal",
+      "title": "Age Group"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "Percentage",
+      "type": "quantitative",
+      "stack": "normalize",
+      "title": "Percentage"
+    },
+    "color": {
+      "field": "Employment_Status",
+      "type": "nominal",
+      "title": "Employment Status",
+      "scale": {
+        "range": [
+          "#DB7093",  
+          "#FF1493",  
+          "#FF69B4",  
+          "#FFB6C1",  
+          "#FFC0CB"   
+        ]
+      }
+    },
+    "tooltip": [
+      {"field": "Employment_Status", "type": "nominal", "title": "Employment Status"},
+      {"field": "Percentage", "type": "quantitative", "title": "Percentage", "format": ".2%"},
+      {"field": "Year", "type": "ordinal", "title": "Year"}
+    ]
+  }
+}
