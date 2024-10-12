@@ -34,7 +34,7 @@ var vg_9 = "sankey_v2.vg.json";
 vegaEmbed("#map9", vg_9, {actions: false}).then(function(result) {
 }).catch(console.error);
 
-var vg_11 = "gender_pay_gap.vg.json";
-vegaEmbed("#map11", vg_11, {actions: false}).then(function(result) {
+var vg_12 = "gender_pay_gap_test.vg.json";
+vegaEmbed("#map12", vg_12, {actions: false}).then(function(result) {
 }).catch(console.error);
 
