@@ -19,12 +19,16 @@
         "y": {
           "field": "Total_Employed",
           "type": "quantitative",
-          "title": "Number of Employed People"
+          "title": "No. of People Employed"
         },
         "color": {
           "field": "Sector",
           "type": "nominal",
-          "title": "Industry"
+          "title": "Industry",
+          "scale": {
+            "domain": ["Agriculture", "Mining", "Manufacturing", "Construction", "Retail Trade"],
+            "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"] 
+          }
         },
         "tooltip": [
           {
@@ -40,7 +44,7 @@
           {
             "field": "Total_Employed",
             "type": "quantitative",
-            "title": "Number of People Employed"
+            "title": "No. of Employed People"
           }
         ]
       }
@@ -62,7 +66,7 @@
         "y": {
           "field": "Total_Employed",
           "type": "quantitative",
-          "title": "Number of Employed People"
+          "title": "No. of Employed People"
         },
         "color": {
           "field": "Sector",

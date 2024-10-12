@@ -30,3 +30,7 @@ var vg_8 = "suburbs_map_v2.vg.json";
 vegaEmbed("#map8", vg_8, {actions: false}).then(function(result) {
 }).catch(console.error);
 
+var vg_9 = "sankey_v2.vg.json";
+vegaEmbed("#map9", vg_9, {actions: false}).then(function(result) {
+}).catch(console.error);
+

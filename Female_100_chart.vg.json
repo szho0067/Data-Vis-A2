@@ -14,13 +14,14 @@
       }
     }
   ],
-  "hconcat": [
+  "vconcat": [
     {
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/male_aggregated_data.csv"
       },
-      "height": 200,
-      "width": 220,
+      "title": "Males",
+      "height": 100,
+      "width": "container",
       "layer": [
         {
           "transform": [
@@ -104,17 +105,18 @@
             "type": "text",
             "align": "left",
             "dx": 140,
-            "dy": 10
+            "dy": 10,
+            "color": "#006EFF"
           },
           "encoding": {
             "text": {
-              "value": ["It can be noted that", "most men are able to find full-time roles", "conforming to societal standards", "of being a bread-winner. There","is a noticeable increase in the", "percentage of individuals categorized", "as 'Not in the Labor Force' (NILF)", "when comparing the '60-64 years'", "and 65 years, and over age groups." , "This suggests that many men typically","retire after the age","of 65 contributing to", "the sharp rise in NILF","status in th 65 years and over group."]
+              "value": ["Most men are able to find full-time roles.", "Thereis a noticeable increase in the", "percentage of individuals categorized", "as 'Not in the Labor Force' (NILF)", "when comparing the '60-64 years'", "and 65 years, and over age groups." , "This suggests that many men typically","retire after the age of 65 contributing to", "the sharp rise in NILF","status in th 65 years and over group."]
             },
             "x": {
-              "value": 100
+              "value": 310
             },
             "y": {
-              "value": 100
+              "value": 70
             }
           }
         }
@@ -124,8 +126,9 @@
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/female_aggregated_data.csv"
       },
-      "height": 200,
-      "width": 220,
+      "title": "Females",
+      "height": 100,
+      "width": "container",
       "layer": [
         {
           "transform": [
@@ -217,10 +220,10 @@
               "value": ["As compared to males,", "it can be seen that there", "is a higher percentage of", "females who are unemployed", " or NILF. This may be due to", "socio-economic constraints, ","gender roles, or childcare and","responsibilities." ]
             },
             "x": {
-              "value": 100
+              "value": 310
             },
             "y": {
-              "value": 100
+              "value": 70
             }
             
           }

@@ -1,90 +1,89 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A side-by-side bar chart showing median income by gender across states, with industry filter.",
-    "title": "Median Income by Gender Across States",
-    "width": 400,
-    "height": 200,
-    "background": "#91d8ff", 
-    "data": {
-      "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Gender%20Pay%20Gap.csv",
-      "format": {"type": "csv"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A side-by-side bar chart showing median income by gender across states, with industry filter.",
+  "title": "Median Income by Gender Across States",
+  "width": "container",
+  "height": 85,
+  "background": "#F0F8FF", 
+  "data": {
+    "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Gender%20Pay%20Gap.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "selectedIndustry",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All",
+          "Agriculture, forestry and fishing",
+          "Mining",
+          "Manufacturing",
+          "Electricity, gas, water and waste services",
+          "Construction",
+          "Wholesale trade",
+          "Retail trade",
+          "Accommodation and food services",
+          "Transport, postal and warehousing",
+          "Information Media and telecommunications",
+          "Financial and insurance services",
+          "Rental, hiring and real estate services",
+          "Professional, scientific and technical services",
+          "Administrative and support services",
+          "Public administration and safety",
+          "Education and training",
+          "Health care and social assistance",
+          "Arts and recreation services",
+          "Other services"
+        ],
+        "name": "Select Industry:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "selectedIndustry === 'All' || datum.Industry === selectedIndustry"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "bar", "xOffset": -10, "size": 20, "color": "#006eff"},
+      "encoding": {
+        "x": {
+          "field": "State and territory",
+          "type": "nominal",
+          "axis": {"labelAngle": -45},
+          "title": "State"
+        },
+        "y": {
+          "field": "Median Male",
+          "type": "quantitative",
+          "axis": {"title": "Median Income"}
+        }
+      }
     },
-    "params": [
-      {
-        "name": "selectedIndustry",
-        "value": "All",
-        "bind": {
-          "input": "select",
-          "options": [
-            "All",
-            "Agriculture, forestry and fishing",
-            "Mining",
-            "Manufacturing",
-            "Electricity, gas, water and waste services",
-            "Construction",
-            "Wholesale trade",
-            "Retail trade",
-            "Accommodation and food services",
-            "Transport, postal and warehousing",
-            "Information Media and telecommunications",
-            "Financial and insurance services",
-            "Rental, hiring and real estate services",
-            "Professional, scientific and technical services",
-            "Administrative and support services",
-            "Public administration and safety",
-            "Education and training",
-            "Health care and social assistance",
-            "Arts and recreation services",
-            "Other services"
-          ],
-          "name": "Select Industry:"
-        }
-      }
-    ],
-    "transform": [
-      {
-        "filter": "selectedIndustry === 'All' || datum.Industry === selectedIndustry"
-      }
-    ],
-    "layer": [
-      {
-        "mark": {"type": "bar", "xOffset": -10, "size": 20, "color": "skyblue"},
-        "encoding": {
-          "x": {
-            "field": "State and territory",
-            "type": "nominal",
-            "axis": {"labelAngle": -45},
-            "title": "State"
-          },
-          "y": {
-            "field": "Median Male",
-            "type": "quantitative",
-            "axis": {"title": "Median Income"}
-          }
-        }
-      },
-      {
-        "mark": {"type": "bar", "xOffset": 10, "size": 20, "color": "orange"},
-        "encoding": {
-          "x": {
-            "field": "State and territory",
-            "type": "nominal"
-          },
-          "y": {
-            "field": "Median Female",
-            "type": "quantitative"
-          }
-        }
-      }
-    ],
-    "encoding": {
-      "color": {
-        "legend": {
-          "title": "Gender",
-          "orient": "bottom",
-          "symbolType": "square"
+    {
+      "mark": {"type": "bar", "xOffset": 10, "size": 20, "color": "#ff69b4"},
+      "encoding": {
+        "x": {
+          "field": "State and territory",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "Median Female",
+          "type": "quantitative"
         }
       }
     }
+  ],
+  "encoding": {
+    "color": {
+      "legend": {
+        "title": "Gender",
+        "orient": "bottom",
+        "symbolType": "square"
+      }
+    }
   }
-  
+}

@@ -46,7 +46,7 @@
         "y": {
           "field": "Average_Employed",
           "type": "quantitative",
-          "title": "Number of Employed People"
+          "title": "No. of People Employed"
         },
         "color": {
           "field": "Industry",
