@@ -22,7 +22,7 @@ var vg_6 = "Male_Proportions_By_Year.vg.json";
 vegaEmbed("#map6", vg_6, {actions: false}).then(function(result) {
 }).catch(console.error);
 
-var vg_7 = "Gender_pay_gap_test.vg.json";
+var vg_7 = "gender_pay_gap.vg.json";
 vegaEmbed("#map7", vg_7, {actions: false}).then(function(result) {
 }).catch(console.error);
 
@@ -32,5 +32,9 @@ vegaEmbed("#map8", vg_8, {actions: false}).then(function(result) {
 
 var vg_9 = "sankey_v2.vg.json";
 vegaEmbed("#map9", vg_9, {actions: false}).then(function(result) {
+}).catch(console.error);
+
+var vg_10 = "sankey.vg.json";
+vegaEmbed("#map10", vg_10, {actions: false}).then(function(result) {
 }).catch(console.error);
 
