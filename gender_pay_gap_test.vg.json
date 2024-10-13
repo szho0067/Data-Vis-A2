@@ -3,7 +3,7 @@
   "description": "A side-by-side bar chart showing median income by gender across states, with industry filter.",
   "title": "Median Income by Gender Across States",
   "width": "container",
-  "height": 150,
+  "height": 178,
   "background": "#F0F8FF", 
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gpg.csv"
