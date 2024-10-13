@@ -20,7 +20,7 @@
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/male_aggregated_data.csv"
       },
       "title": "Males",
-      "height": 100,
+      "height": 75,
       "width": "container",
       "layer": [
         {
@@ -86,10 +86,10 @@
                   "Unemployed total"
                 ],
                 "range": [
-                  "#1E90FF",  
-                  "#4169E1", 
-                  "#6495ED",  
-                  "#87CEEB" 
+                  "#1E90FF",
+                  "#4169E1",
+                  "#6495ED",
+                  "#87CEEB"
                 ]
               }
             },
@@ -99,26 +99,6 @@
               {"field": "Year", "type": "ordinal", "title": "Year"}
             ]
           }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "dx": 140,
-            "dy": 10,
-            "color": "#006EFF"
-          },
-          "encoding": {
-            "text": {
-              "value": ["Most men are able to find full-time roles.", "Thereis a noticeable increase in the", "percentage of individuals categorized", "as 'Not in the Labor Force' (NILF)", "when comparing the '60-64 years'", "and 65 years, and over age groups." , "This suggests that many men typically","retire after the age of 65 contributing to", "the sharp rise in NILF","status in th 65 years and over group."]
-            },
-            "x": {
-              "value": 310
-            },
-            "y": {
-              "value": 70
-            }
-          }
         }
       ]
     },
@@ -127,7 +107,7 @@
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/female_aggregated_data.csv"
       },
       "title": "Females",
-      "height": 100,
+      "height": 75,
       "width": "container",
       "layer": [
         {
@@ -205,27 +185,6 @@
               {"field": "Percentage", "type": "quantitative", "title": "Percentage", "format": ".2%"},
               {"field": "Year", "type": "ordinal", "title": "Year"}
             ]
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "color": "#FF1493",
-            "dx": 0,
-            "dy": 10
-          },
-          "encoding": {
-            "text": {
-              "value": ["As compared to males,", "it can be seen that there", "is a higher percentage of", "females who are unemployed", " or NILF. This may be due to", "socio-economic constraints, ","gender roles, or childcare and","responsibilities." ]
-            },
-            "x": {
-              "value": 100
-            },
-            "y": {
-              "value": 70
-            }
-            
           }
         }
       ]

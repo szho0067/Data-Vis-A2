@@ -3,7 +3,7 @@
   "background": "#F0F8FF",
   "vconcat": [
     {
-      "width": 390,
+      "width": "container",
       "height": 300,
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
@@ -33,7 +33,7 @@
       }
     },
     {
-      "width": 390,
+      "width": "container",
       "height": 50,
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gender_growth_average.csv"
