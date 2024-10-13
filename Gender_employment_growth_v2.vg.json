@@ -13,6 +13,7 @@
         "x": {
           "field": "Date",
           "type": "temporal",
+          "timeUnit": "year",
           "scale": {"domain": {"param": "brush"}},
           "title": "Year"
         },
@@ -29,7 +30,12 @@
             "domain": ["Total", "Male", "Female"],
             "range": ["#808080", "#1f77b4", "#ff69b4"]
           }
-        }
+        },
+        "tooltip": [
+          {"field": "Date", "type": "temporal", "timeUnit": "year", "title": "Year"},
+          {"field": "Average_Employed", "type": "quantitative", "title": "No. of Employed People"},
+          {"field": "Category", "type": "nominal", "title": "Category"}
+        ]
       }
     },
     {
@@ -52,6 +58,7 @@
         "x": {
           "field": "Date",
           "type": "temporal",
+          "timeUnit": "year",
           "title": "Year"
         },
         "y": {
@@ -62,12 +69,17 @@
         "color": {
           "field": "Category",
           "type": "nominal",
-          "title": "Category",
+          "title": "Gender",
           "scale": {
             "domain": ["Total", "Male", "Female"],
             "range": ["#808080", "#1f77b4", "#ff69b4"]
           }
-        }
+        },
+        "tooltip": [
+          {"field": "Date", "type": "temporal", "timeUnit": "year", "title": "Year"},
+          {"field": "Average_Employed", "type": "quantitative", "title": "No. of Employed People"},
+          {"field": "Category", "type": "nominal", "title": "Category"}
+        ]
       }
     }
   ]

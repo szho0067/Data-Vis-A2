@@ -129,7 +129,7 @@
       {
         "name": "color",
         "type": "ordinal",
-        "range": ["#3A86FF", "#17A2B8", "#8338EC", "#606C38", "#FF006E","#FFBE0B"],
+        "range": ["#DF2935", "#17A2B8", "#8338EC", "#606C38", "#CD5C08","#FFBE0B"],
         "domain": ["Employed full-time", "Employed part-time","Unemployed", "Incoming rotation group", "Not in the labour force (NILF)", "Unmatched in common sample (responded in current month but not in previous)"]
       },
 

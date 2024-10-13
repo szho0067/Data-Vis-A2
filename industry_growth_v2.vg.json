@@ -13,6 +13,7 @@
         "x": {
           "field": "Date",
           "type": "temporal",
+          "timeUnit": "year",
           "scale": {"domain": {"param": "brush"}},
           "title": "Year"
         },
@@ -34,6 +35,7 @@
           {
             "field": "Date",
             "type": "temporal",
+            "timeUnit": "year",
             "title": "Year"
           },
           {
@@ -61,6 +63,7 @@
         "x": {
           "field": "Date",
           "type": "temporal",
+          "timeUnit": "year",
           "title": "Year"
         },
         "y": {

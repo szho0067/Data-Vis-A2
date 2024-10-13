@@ -3,7 +3,7 @@
   "description": "A side-by-side bar chart showing median income by gender across states, with industry filter.",
   "title": "Median Income by Gender Across States",
   "width": "container",
-  "height": 178,
+  "height": 250,
   "background": "#F0F8FF", 
   "data": {
     "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/gpg.csv"
@@ -59,7 +59,13 @@
           "field": "Median Male",
           "type": "quantitative",
           "axis": {"title": "Median Income"}
-        }
+        },
+        "tooltip": [
+          {"field": "State and territory", "type": "nominal", "title": "State"},
+          {"field": "Industry", "type": "nominal", "title": "Industry"},
+          {"field": "Median Male", "type": "quantitative", "title": "Median Male Income"}
+          
+        ]
       }
     },
     {
@@ -72,7 +78,13 @@
         "y": {
           "field": "Median Female",
           "type": "quantitative"
-        }
+        },
+        "tooltip": [
+          {"field": "State and territory", "type": "nominal", "title": "State"},
+          {"field": "Industry", "type": "nominal", "title": "Industry"},
+          {"field": "Median Female", "type": "quantitative", "title": "Median Female Income"}
+          
+        ]
       }
     }
   ],

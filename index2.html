@@ -68,6 +68,7 @@
     }
 
     .vis-container {
+      display:flex;  
       width: 100%;
       
       background-color: aliceblue;
@@ -75,6 +76,7 @@
 
     
     .vis-container-2 {
+      display: flex;  
       width: 100%;
       background-color: aliceblue;
     }
@@ -82,6 +84,7 @@
 
 
     .section-box {
+        
       border: 2px solid #021591;
       padding: 10px;
       margin: 10px;
@@ -89,52 +92,50 @@
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
       background-color: aliceblue;
       width: 95%;
+      box-sizing: border-box;
     }
 
     .large-container {
+      display: flex;  
       width: 97.5%;
     }
 
     .small-container {
+      display: flex;  
       width: 90%
     }
     .smaller-container{
+      display: flex;  
       margin-top: 10px;
       width: 90%
     }
 
     .smaller2-container{
+      display: flex;  
       margin-top: 10px;
       width: 60%
     }
 
     .smaller3-container{
+      display: flex;  
       width: 70%
     }
 
     .smaller4-container{
+      display: flex;  
       margin-top: 10px;
       width: 60%
     }
 
     .centered-title {
+      
       text-align: center;
     }
     .height-box{
-      height: 80%
+      display: flex;  
+      height: 100%
     }
 
-    .height-box2{
-      height: 93%
-    }
-
-    .height-box3{
-      height: 58.125%
-    }
-
-    .height-box4{height: 34.875%
-
-    }
   </style>
 
 </head>
@@ -162,7 +163,7 @@
       
       <!-- Maps 1 and 8 side by side -->
       <div class="pure-u-1-2">
-        <div class="section-box ">
+        <div class="section-box">
           <h3 class="centered-title">Percentage of Employed People in the State</h3>
           <div class="map-container">
             <div id="map1" class="vis-container-2"></div>
@@ -183,27 +184,23 @@
     </div>
     <div class = "pure-g">
       <div class="pure-u-1-2">
-        
-        <div class="section-box height-box">
-          <h3 class="centered-title">Key Findings</h3>
-          <p>From the above map, it can be seen that over the years, there has been a steady increase in the percentage of people employed within each state. Additionally, the percentage of employment has consistently been highest around Darwin, while remaining lowest in Tasmania.  This may pose to be interesting are posed to be places of job opportunity within Australia. Darwin's economy is heavily influenced by specific sectors like mining, construction, defense, and logistics, which could create strong demand for labor, leading to higher employment rates. Sydney and Victoria have more diversified economies, and while they have large job markets, they might also experience more competition and unemployment in some industries.</p>
-        </div>
-        
+          <div class="section-box height-box">
+            <h3 class="centered-title">Key Findings</h3>
+            <p>From the above map, it can be seen that over the years, there has been a steady increase in the percentage of people employed within each state. Additionally, the percentage of employment has consistently been highest around Darwin, while remaining lowest in Tasmania.  This may pose to be interesting are posed to be places of job opportunity within Australia. Darwin's economy is heavily influenced by specific sectors like mining, construction, defense, and logistics, which could create strong demand for labor, leading to higher employment rates. Sydney and Victoria have more diversified economies, and while they have large job markets, they might also experience more competition and unemployment in some industries.</p>
+          </div>
       </div> 
       
       <div class="pure-u-1-2">
-        
-        <div class="section-box height-box">
-          <h3 class="centered-title">Key Findings</h3>
-          <p>
-            The map emphasises the idea that urban areas (largely populated areas) shows the greatest job density per km^2.
-          </p>
-          <p>Additionally, states such as Melbourne, Sydney and Perth offer many more jobs as compared to Darwin per km^2. In spite of this, Darwin still has a higher percentage of population employed. </p>
-          <p>This further solidifies the idea that states such as Melbourne, Sydney and Perth are more oversaturated in terms of employment opportunities. </p>
-          
+          <div class="section-box height-box">
+            <h3 class="centered-title">Key Findings</h3>
+            <p>
+              The map emphasises the idea that urban areas (largely populated areas) shows the greatest job density per km^2.
+            </p>
+            <p>Additionally, states such as Melbourne, Sydney and Perth offer many more jobs as compared to Darwin per km^2. In spite of this, Darwin still has a higher percentage of population employed. </p>
+            <p>This further solidifies the idea that states such as Melbourne, Sydney and Perth are more oversaturated in terms of employment opportunities. </p>
+            
 
-        </div>
-        
+          </div>
       </div>
   </div>      
       
@@ -217,7 +214,7 @@
       </div>
 
       <div class="pure-u-1-2">
-        <div class="section-box height-box2">
+        <div class="section-box">
           <h3 class="centered-title">Median Earnings by Industry per Year</h3>
           <div class="single-container">
             <div id="dotplot" class="vis-container"></div>
@@ -227,7 +224,7 @@
 
       <div class="pure-u-1-2">
         <div class="pure-u-1-1">
-          <div class="section-box height-box3">
+          <div class="section-box">
             <h3 class="centered-title">Division of Sectors</h3>
             <p>Industries can be categorized into four key sectors based on their characteristics. </p>
             
@@ -305,9 +302,9 @@
       </div>
 
       <div class = "pure-u-1-2">
-        <div class="section-box height-box">
+        <div class="section-box">
           <h3 class="centered-title">Key Findings</h3>
-          <p> It can be seen that up until 2015, the <span style="font-weight: bold; font-style: italic; color: #E76F51;">Manufacturing, Construction, and Trade</span> was most popular. This was overtaken by the <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Public Services and Community Support</span> sector.</p>
+          <p> It can be seen that up until 2015, the <span style="font-weight: bold; font-style: italic; color: #E76F51;">Manufacturing, Construction, and Trade</span> was most popular. This was overtaken by the "Public Services and Community Support" sector.</p>
           <p> The rate of growth in employment of <span style="font-weight: bold; font-style: italic; color: #2A9D8F;">Public Services and Community Support</span> is the most rapid.</p> 
           <p> The amount of people employed within the <span style="font-weight: bold; font-style: italic; color: #E9C46A;">Primary Industries</span> sector, as well as other services, seems to remain constant, showcasing a general lack of interest and demand of these sectors within Australia.
           </p>
@@ -315,7 +312,7 @@
       </div>
 
       <div class = "pure-u-1-2">
-        <div class="section-box height-box">
+        <div class="section-box">
           <h3 class="centered-title">Key Findings</h3>
           <p> Over the years, the number of <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>males</span> employed has always been higher than the number of <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>females</span> employed.</p>
           
@@ -339,76 +336,58 @@
 
      
       <div class="pure-u-1-2">
-        
-          <div class="section-box height-box">
+        <div class = "pure-u-1">
+          <div class="section-box">
             <h3 class="centered-title">Gender Roles in the Workplace</h3>
             <p>Gender roles within the workplace contribute to differing employment rates between <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span>. Traditionally, <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> have been more likely to occupy full-time positions and leadership roles, while <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> often face barriers such as balancing work with family responsibilities, leading to higher rates of part-time employment or career breaks. Societal expectations around caregiving, coupled with limited access to flexible work arrangements, can hinder <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span>’s career progression. As a result, <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> tend to have different employment patterns, with <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> typically enjoying higher labor force participation and <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> experiencing greater job instability or lower participation rates, particularly during childbearing and caregiving years.</p>
           </div>
-       
-      </div>
+        </div>
 
-
-
-      <div class="pure-u-1-2">
-        
-          <div class="section-box height-box">
-            <h3 class="centered-title">Gender Pay Gap in Australia</h3>
-            <p>
-              The gender pay gap refers to the disparity in earnings between 
-              <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> 
-              and 
-              <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span>, 
-              with 
-              <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> 
-              typically earning less than 
-              <span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>men</span> 
-              for the same work or similar roles. Factors contributing to the gender pay gap include occupational segregation, where 
-              <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> 
-              are underrepresented in higher-paying industries or leadership roles, as well as unconscious biases, discrimination, and unequal access to career development opportunities. Furthermore, the gender pay gap can be exacerbated by 
-              <span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>women</span> 
-              taking on a greater share of unpaid care work, leading to career interruptions or reduced working hours.
-            </p>
-            
-            </div>
-        
-      </div>
+        <div class="pure-u-1">
+          <div class="section-box">
+            <h3 class="centered-title">Key Findings</h3>
+            <p><span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>Most men are able to find full-time roles.</span> </p>
+            <p><span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>As compared to males, it can be seen that there is a higher percentage of females who are unemployed or NILF. This may be due to socio-economic constraints, gender roles, or childcare and responsibilities.</span></p>
+            <p>There is a noticeable increase in the percentage of individuals categorized as 'Not in the Labor Force' (NILF) when comparing the '60-64 years' and 65 years, and over age groups. This suggests that many people typically retire after the age of 65, contributing to the sharp rise in NILF status in the 65 years and over group.</p>
+          </div>  
+        </div>
+      </div>   
 
       <div class="pure-u-1-2">
-        <div class="section-box height-box2">
+        <div class="section-box">
           <h3 class="centered-title">Proportions of Gender Employment</h3>
           <div class="small-container">
             <div id="map5" class="smaller3-container"></div>
           </div>
         </div>
-      </div>
+      </div> 
       
       <div class="pure-u-1-2">
-        <div class="section-box height-box2">
-          <h3 class="centered-title">Gender Pay Gap Within Each Industry</h3>
-          <div class="map-container">
-            <div id="gender_pay_gap_2" class="small-container"></div>
+        <div class = "pure-u-1">
+          <div class="section-box">
+            <h3 class="centered-title">Gender Pay Gap in Australia</h3>
+            <p>
+              The gender pay gap refers to the disparity in earnings between men and women, with women typically earning less than men for the same work or similar roles. Factors contributing to the gender pay gap include occupational segregation, where women are underrepresented in higher-paying industries or leadership roles, as well as unconscious biases, discrimination, and unequal access to career development opportunities.</p>
           </div>
         </div>
-      </div>
 
-      <div class="pure-u-1-2">
-        <div class="section-box height-box">
-          <h3 class="centered-title">Key Findings</h3>
-          <p><span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>Most men are able to find full-time roles.</span> </p>
-          <p><span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>As compared to males, it can be seen that there is a higher percentage of females who are unemployed or NILF. This may be due to socio-economic constraints, gender roles, or childcare and responsibilities.</span></p>
-          <p>There is a noticeable increase in the percentage of individuals categorized as 'Not in the Labor Force' (NILF) when comparing the '60-64 years' and 65 years, and over age groups. This suggests that many people typically retire after the age of 65, contributing to the sharp rise in NILF status in the 65 years and over group.</p>
-        </div>  
-      </div>
-
-      <div class="pure-u-1-2">
-        <div class="section-box height-box">
-          <h3 class="centered-title">Key Findings</h3>
-          <P><span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>The data highlights that amongst most industries within each state,</span><span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'> men tend to have a higher rate of earnings.</span></P>
-          <p><span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>Missing data for female earnings may represent the lack of, or underrepresentation of females within the industry.</span></p>
+        <div class="pure-u-1">
+          <div class="section-box">
+            <h3 class="centered-title">Key Findings</h3>
+            <P><span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'>The data highlights that amongst most industries within each state,</span><span style='color:rgb(0, 110, 255); font-weight:bold; font-style:italic;'> men tend to have a higher rate of earnings.</span></P>
+            <p><span style='color:rgb(255, 105, 180); font-weight:bold; font-style:italic;'>Missing data for female earnings may represent the lack of, or underrepresentation of females within the industry.</span></p>
+            </div>
+          </div>  
+        </div>
+        <div class="pure-u-1-2">
+          <div class="section-box">
+            <h3 class="centered-title">Gender Pay Gap Within Each Industry</h3>
+            <div class="map-container">
+              <div id="gender_pay_gap_2" class="small-container"></div>
+            </div>
           </div>
-        </div>  
-      </div>
-        
+        </div>
+
       </div> 
 
     </div>
@@ -428,7 +407,7 @@
       </div> 
       
       <div class = "pure-u-1-2">
-        <div class="section-box height-box">
+        <div class="section-box">
           <h3 class="centered-title">How to read the Sankey Diagram</h3>
           <p>Each flow in the central section represents the transition of individuals from one employment status in the previous month to a different employment status in the current month.</p>
           <p>The thickness of the lines reflects the proportion of people moving between employment statuses.</p>
@@ -438,32 +417,16 @@
       </div>
 
       <div class = "pure-u-1-2">
-        <div class="section-box height-box">
+        <div class="section-box">
           <h3 class="centered-title">Key Findings</h3>
           <p>
-            Over the years, a larger amount of people enter in the labour force.
+          Over the years, a larger amount of people enter in the labour force.
+          </p>
+          <p> It can be seen that very few Australians are unemployed and a larger proportion of people are either employed full-time or NILF.</p>
+          <p>Most Australians tend to stick to their original employment status with the most popular transitions being between employed part-time to employed full-time or vise versa.
           </p>
           <p>
-            It can be seen that very few Australians are 
-            <span style='color:#8338EC; font-weight:bold; font-style:italic;'>unemployed</span> 
-            and a larger proportion of people are either 
-            <span style='color:#DF2935; font-weight:bold; font-style:italic;'>employed full-time</span> 
-            or 
-            <span style='color:#606C38; font-weight:bold; font-style:italic;'>not in the labour force (NILF)</span>.
-          </p>
-          <p>
-            Most Australians tend to stick to their original employment status with the most popular transitions being between 
-            <span style='color:#17A2B8; font-weight:bold; font-style:italic;'>employed part-time</span> 
-            to 
-            <span style='color:#DF2935; font-weight:bold; font-style:italic;'>employed full-time</span> 
-            or vice versa.
-          </p>
-          <p>
-            There are visible shifts between categories, especially between 
-            <span style='color:#DF2935; font-weight:bold; font-style:italic;'>employed full-time</span> 
-            and 
-            <span style='color:#606C38; font-weight:bold; font-style:italic;'>not in the labour force (NILF)</span>, 
-            which may indicate individuals retiring or leaving the workforce.
+            There are visible shifts between categories, especially between "Employed full-time" and "Not in the labour force," which may indicate individuals retiring or leaving the workforce.
           </p>
           
         </div>
