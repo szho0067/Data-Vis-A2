@@ -6,7 +6,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry_Growth_Grouped.csv"
       },
-      "width": 390,
+      "width": "container",
       "height": 300,
       "mark": "line",
       "encoding": {
@@ -53,7 +53,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/Industry_Growth_Grouped.csv"
       },
-      "width": 390,
+      "width": "container",
       "height": 50,
       "mark": "line",
       "params": [{"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}],

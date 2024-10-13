@@ -35,8 +35,13 @@ h1 {
     padding-right: 20px;
 }
 
+
 .pure-g {
     margin-bottom: 40px;
+}
+
+.pure-u-1-1{
+    margin-right:0px
 }
 
 .small-font {

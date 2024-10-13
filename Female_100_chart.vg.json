@@ -212,7 +212,7 @@
             "type": "text",
             "align": "left",
             "color": "#FF1493",
-            "dx": 140,
+            "dx": 0,
             "dy": 10
           },
           "encoding": {
@@ -220,7 +220,7 @@
               "value": ["As compared to males,", "it can be seen that there", "is a higher percentage of", "females who are unemployed", " or NILF. This may be due to", "socio-economic constraints, ","gender roles, or childcare and","responsibilities." ]
             },
             "x": {
-              "value": 310
+              "value": 100
             },
             "y": {
               "value": 70
