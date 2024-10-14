@@ -4,12 +4,12 @@
     "width": 1200,
     "data": [
         {
-          "name": "rawData",
+          "name": "StatusData",
           "url": "https://raw.githubusercontent.com/szho0067/Data-Vis-A2/refs/heads/main/Data%20A2/employment_transitions.csv",
           "format": {"type": "csv"},
           "transform": [
-            {"type": "formula", "expr": "datum['Labour.force.status...previous.month']", "as": "stk1"},
-            {"type": "formula", "expr": "datum['Labour.force.status.current.month']", "as": "stk2"},
+            {"type": "formula", "expr": "datum['Labour.force.status...previous.month']", "as": "stack1"},
+            {"type": "formula", "expr": "datum['Labour.force.status.current.month']", "as": "stack2"},
             {"type": "formula", "expr": "datum['Persons.current.month..000.']", "as": "size"},
             {
               "type": "filter",
@@ -19,17 +19,17 @@
       },
       {
         "name": "nodes",
-        "source": "rawData",
+        "source": "StatusData",
         "transform": [
           {
             "type": "filter",
-            "expr": "!groupSelector || groupSelector.stk1 == datum.stk1 || groupSelector.stk2 == datum.stk2"
+            "expr": "!employSelector || employSelector.stack1 == datum.stack1 || employSelector.stack2 == datum.stack2"
           },
-          {"type": "formula", "expr": "datum.stk1+datum.stk2", "as": "key"},
-          {"type": "fold", "fields": ["stk1", "stk2"], "as": ["stack", "grpId"]},
+          {"type": "formula", "expr": "datum.stack1+datum.stack2", "as": "key"},
+          {"type": "fold", "fields": ["stack1", "stack2"], "as": ["stack", "grpId"]},
           {
             "type": "formula",
-            "expr": "datum.stack == 'stk1' ? datum.stk1+' '+datum.stk2 : datum.stk2+' '+datum.stk1",
+            "expr": "datum.stack == 'stack1' ? datum.stack1+' '+datum.stack2 : datum.stack2+' '+datum.stack1",
             "as": "sortField"
           },
           {
@@ -62,7 +62,7 @@
           {"type": "formula", "expr": "scale('y', datum.y1)", "as": "scaledY1"},
           {
             "type": "formula",
-            "expr": "datum.stack == 'stk1'",
+            "expr": "datum.stack == 'stack1'",
             "as": "rightLabel"
           },
           {
@@ -73,18 +73,18 @@
         ]
       },
       {
-        "name": "destinationNodes",
+        "name": "finalNodes",
         "source": "nodes",
-        "transform": [{"type": "filter", "expr": "datum.stack == 'stk2'"}]
+        "transform": [{"type": "filter", "expr": "datum.stack == 'stack2'"}]
       },
       {
         "name": "edges",
         "source": "nodes",
         "transform": [
-          {"type": "filter", "expr": "datum.stack == 'stk1'"},
+          {"type": "filter", "expr": "datum.stack == 'stack1'"},
           {
             "type": "lookup",
-            "from": "destinationNodes",
+            "from": "finalNodes",
             "key": "key",
             "fields": ["key"],
             "as": ["target"]
@@ -94,9 +94,9 @@
             "orient": "horizontal",
             "shape": "diagonal",
             "sourceY": {"expr": "scale('y', datum.yc)"},
-            "sourceX": {"expr": "scale('x', 'stk1') + bandwidth('x')"},
+            "sourceX": {"expr": "scale('x', 'stack1') + bandwidth('x')"},
             "targetY": {"expr": "scale('y', datum.target.yc)"},
-            "targetX": {"expr": "scale('x', 'stk2')"}
+            "targetX": {"expr": "scale('x', 'stack2')"}
           },
           {
             "type": "formula",
@@ -116,7 +116,7 @@
         "name": "x",
         "type": "band",
         "range": "width",
-        "domain": ["stk1", "stk2"],
+        "domain": ["stack1", "stack2"],
         "paddingOuter": 0.05,
         "paddingInner": 0.95
       },
@@ -138,7 +138,7 @@
         "name": "stackNames",
         "type": "ordinal",
         "range": ["Previous Month", "Current Month"],
-        "domain": ["stk1", "stk2"]
+        "domain": ["stack1", "stack2"]
       }
     ],
     "axes": [
@@ -163,22 +163,22 @@
           "update": {
             "stroke": [
               {
-                "test": "groupSelector && groupSelector.stack=='stk1'",
+                "test": "employSelector && employSelector.stack=='stack1'",
                 "scale": "color",
-                "field": "stk2"
+                "field": "stack2"
               },
-              {"scale": "color", "field": "stk1"}
+              {"scale": "color", "field": "stack1"}
             ],
             "strokeWidth": {"field": "strokeWidth"},
             "path": {"field": "path"},
             "strokeOpacity": {
-              "signal": "!groupSelector && (groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 0.9 : 0.3"
+              "signal": "!employSelector && (HoverInteraction.stack1 == datum.stack1 || HoverInteraction.stack2 == datum.stack2) ? 0.9 : 0.3"
             },
             "zindex": {
-              "signal": "!groupSelector && (groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 1 : 0"
+              "signal": "!employSelector && (HoverInteraction.stack1 == datum.stack1 || HoverInteraction.stack2 == datum.stack2) ? 1 : 0"
             },
             "tooltip": {
-              "signal": "datum.stk1 + ' → ' + datum.stk2 + '    ' + format(datum.size, ',.0f') + '   (' + format(datum.percentage, '.1%') + ')'"
+              "signal": "datum.stack1 + ' → ' + datum.stack2 + '    ' + format(datum.size, ',.0f') + '   (' + format(datum.percentage, '.1%') + ')'"
             }
           },
           "hover": {"strokeOpacity": {"value": 1}}
@@ -230,7 +230,7 @@
           {
             "name": "dataForShowAll",
             "values": [{}],
-            "transform": [{"type": "filter", "expr": "groupSelector"}]
+            "transform": [{"type": "filter", "expr": "employSelector"}]
           }
         ],
         "encode": {
@@ -298,23 +298,23 @@
     ],
     "signals": [
       {
-        "name": "groupHover",
+        "name": "HoverInteraction",
         "value": {},
         "on": [
           {
             "events": "@groupMark:mouseover",
-            "update": "{stk1:datum.stack=='stk1' && datum.grpId, stk2:datum.stack=='stk2' && datum.grpId}"
+            "update": "{stack1:datum.stack=='stack1' && datum.grpId, stack2:datum.stack=='stack2' && datum.grpId}"
           },
           {"events": "mouseout", "update": "{}"}
         ]
       },
       {
-        "name": "groupSelector",
+        "name": "employSelector",
         "value": false,
         "on": [
           {
             "events": "@groupMark:click!",
-            "update": "{stack:datum.stack, stk1:datum.stack=='stk1' && datum.grpId, stk2:datum.stack=='stk2' && datum.grpId}"
+            "update": "{stack:datum.stack, stack1:datum.stack=='stack1' && datum.grpId, stack2:datum.stack=='stack2' && datum.grpId}"
           },
           {
             "events": [
